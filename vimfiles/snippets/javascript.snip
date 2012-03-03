@@ -1,0 +1,86 @@
+#var
+snippet var
+abbr var
+    var
+
+#関数定義
+snippet function
+abbr function func_name(args){}
+    function ${1}(${2}) {
+        ${3}
+    }
+
+#console.log
+snippet console
+abbr console.log
+    console.log(${1});${2}
+
+#alert
+snippet alert
+abbr alert
+    alert(${1});${2}
+
+#for
+snippet for
+abbr for () {}
+    for (${1}) {
+        ${2}
+    }
+
+#document
+snippet document
+abbr document
+    document
+
+#getElementById
+snippet getElementById
+abbr getElementById
+    getElementById
+
+#prototype
+snippet prototype
+abbr prototype
+    prototype
+
+#attachEvent
+snippet attachEvent
+abbr attachEvent
+    attachEvent
+
+#addEventListener
+snippet addEventListener
+abbr addEventListener
+    addEventListener
+
+#setTimeout
+snippet setTimeout
+abbr setTimeout
+    setTimeout
+
+
+#jQuery selector
+snippet selector
+abbr selector
+    $(${1})${2}
+
+#jQuery each
+snippet each
+abbr each
+    $.each(${1}, function(i, val) {
+        ${2}
+    });
+
+#jQuery each
+snippet elementeach
+abbr each
+    $(${1}).each(function(i, val) {
+        ${2}
+    });
+
+#jQuery ajax
+snippet ajax
+abbr ajax
+    $.ajax({
+        ${1}
+    });
+
