@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Dotfiles : " />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Dotfiles</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/STAR-ZERO/dotfiles">Fork Me on GitHub</a>
+
+          <h1 id="project_title">Dotfiles</h1>
+          <h2 id="project_tagline"></h2>
+
+          <section id="downloads">
+            <a class="zip_download_link" href="https://github.com/STAR-ZERO/dotfiles/zipball/master">Download this project as a .zip file</a>
+            <a class="tar_download_link" href="https://github.com/STAR-ZERO/dotfiles/tarball/master">Download this project as a tar.gz file</a>
+          </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>dotfiles-vim</h1>
+
+<p>Vim setting fils
+Use MacVim <a href="http://code.google.com/p/macvim-kaoriya/">http://code.google.com/p/macvim-kaoriya/</a></p>
+
+<h2>Install &amp; Setting</h2>
+
+<h3>git clone</h3>
+
+<pre><code>$ git clone git@github.com:STAR-ZERO/dotfiles-vim.git ~/dotfiles
+</code></pre>
+
+<h3>submodule init,update</h3>
+
+<pre><code>$ cd ~/dotfiles
+$ git submodule init
+$ git submodule update
+</code></pre>
+
+<h3>create symbolic link</h3>
+
+<pre><code>$ ln -s ~/dotfiles/_vimrc ~/.vimrc
+$ ln -s ~/dotfiles/_gvimrc ~/.gvimrc
+$ ln -s ~/dotfiles/vimfiles ~/.vim
+</code></pre>
+
+<h3>plugin install (Vim command)</h3>
+
+<pre><code>:BundleInstall
+</code></pre>
+
+<h2>Plugins</h2>
+
+<p>Plugin is managed by Vundle. </p>
+
+<ul>
+<li><p>Shougo/neocomplcache</p></li>
+<li><p>Shougo/unite.vim</p></li>
+<li><p>Shougo/vimshell</p></li>
+<li>
+<p>Shougo/vimproc<br>
+compile required</p>
+
+<pre><code>$ make -f make_mac.mak
+</code></pre>
+</li>
+<li>
+<p>basyura/jslint.vim<br>
+required SpiderMoney or Rhino or node.js<br>
+example:</p>
+
+<pre><code>$ brew install spidermonkey
+</code></pre>
+</li>
+<li><p>quickrun.vim</p></li>
+<li><p>project.tar.gz</p></li>
+<li>
+<p>ShowMarks</p>
+
+<p>modify ~/vim/bundle/ShowMarks/plugin/showmarks.vim line115  </p>
+
+<pre><code>let s:all_marks = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKL...
+</code></pre>
+
+<p>↓ ↓ ↓</p>
+
+<pre><code>let s:all_marks = "abcdefghijklmnopqrstuvwxyz"
+</code></pre>
+</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Dotfiles maintained by <a href="https://github.com/STAR-ZERO">STAR-ZERO</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
