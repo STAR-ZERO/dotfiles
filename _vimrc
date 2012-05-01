@@ -18,6 +18,7 @@ Bundle 'BufOnly.vim'
 "SpiderMoney or Rihno or node.js required
 "brew install spidermonkey
 Bundle 'basyura/jslint.vim'
+Bundle 'kchmck/vim-coffee-script'
 
 filetype plugin indent on
 
@@ -100,7 +101,7 @@ let g:unite_winheight=15
 "バッファ一覧
 noremap <C-P> :Unite buffer<CR>
 "ファイル一覧
-noremap <C-N> :Unite -buffer-name=file file<CR>
+noremap <C-N> :Unite -buffer-name=file file file/new<CR>
 "レジスタ一覧
 noremap <C-Y> :Unite -buffer-name=register register<CR>
 "最近使ったファイルの一覧
