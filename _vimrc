@@ -15,8 +15,6 @@ Bundle 'quickrun.vim'
 Bundle 'project.tar.gz'
 Bundle 'ShowMarks'
 Bundle 'BufOnly.vim'
-"Compile required
-Bundle 'Shougo/vimproc'
 "SpiderMoney or Rihno or node.js required
 "brew install spidermonkey
 Bundle 'basyura/jslint.vim'
