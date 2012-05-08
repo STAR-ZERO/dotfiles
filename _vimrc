@@ -19,6 +19,7 @@ Bundle 'BufOnly.vim'
 "brew install spidermonkey
 Bundle 'basyura/jslint.vim'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'tpope/vim-rails'
 
 filetype plugin indent on
 
@@ -140,3 +141,18 @@ function! s:javascript_filetype_settings()
 endfunction
 autocmd FileType javascript call s:javascript_filetype_settings()
 
+"rails.vim
+let g:rails_level=4
+let g:rails_default_file="app/controllers/application.rb"
+let g:rails_default_database="sqlite3"
+
+" magic comment
+function! MagicComment()
+    let magic_comment = "# -*- coding: utf-8 -*-\n"
+    let pos = getpos(".")
+    call cursor(1, 0)
+    execute ":normal i" . magic_comment
+    execute ":normal XX"
+    call setpos(".", pos)
+endfunction
+map <silent> <F12> :call MagicComment()<CR>
