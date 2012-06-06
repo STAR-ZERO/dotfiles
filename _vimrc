@@ -10,7 +10,6 @@ Bundle 'gmarik/vundle'
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/neocomplcache-snippets-complete'
 Bundle 'Shougo/unite.vim'
-Bundle 'Shougo/vimshell'
 Bundle 'quickrun.vim'
 Bundle 'project.tar.gz'
 Bundle 'ShowMarks'
@@ -20,6 +19,7 @@ Bundle 'BufOnly.vim'
 Bundle 'basyura/jslint.vim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'tpope/vim-rails'
+Bundle 'ujihisa/unite-colorscheme'
 
 filetype plugin indent on
 

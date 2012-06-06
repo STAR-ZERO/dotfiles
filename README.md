@@ -28,20 +28,15 @@ Plugin is managed by Vundle.
 
 * Shougo/neocomplcache
 
+* Shougo/neocomplcache-snippets-complete
+
 * Shougo/unite.vim
-
-* Shougo/vimshell
-
-* Shougo/vimproc  
-  compile required
-
-        $ make -f make_mac.mak
 
 * basyura/jslint.vim  
   required SpiderMoney or Rhino or node.js  
   example:
 
-        $ brew install spidermonkey
+        $ brew install node
 
 * quickrun.vim
 
@@ -56,5 +51,12 @@ Plugin is managed by Vundle.
 
         let s:all_marks = "abcdefghijklmnopqrstuvwxyz"
 
+* BufOnly.vim
+
+* kchmck/vim-coffee-script
+
+* tpope/vim-rails
+
+* ujihisa/unite-colorscheme
 
 
