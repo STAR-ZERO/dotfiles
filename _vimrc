@@ -70,6 +70,8 @@ autocmd FileType xhtml set indentexpr&
 "バッファを閉じる
 noremap <C-Q> :bdel<CR>
 
+"crontabの時はバックアップしない
+autocmd BufRead /tmp/crontab.* :set nobackup nowritebackup
 
 ""neocomplcache設定
 let g:neocomplcache_enable_at_startup=1
