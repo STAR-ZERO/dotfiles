@@ -32,11 +32,8 @@ Plugin is managed by Vundle.
 
 * Shougo/unite.vim
 
-* basyura/jslint.vim  
-  required SpiderMoney or Rhino or node.js  
-  example:
-
-        $ brew install node
+* scrooloose/syntastic
+  required jshint
 
 * quickrun.vim
 

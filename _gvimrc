@@ -17,4 +17,10 @@ if has('gui_macvim')
     colorscheme desert
     "Vimからクリップボードにもコピー
     set clipboard=unnamed,autoselect
+    "PATH
+    let ZSH_PATH = '/bin/zsh'
+    if executable(ZSH_PATH)
+      let ZSH_ENV_PATH = system(ZSH_PATH . " -c 'source ~/.zshrc; echo $PATH'")
+      let $PATH = ZSH_ENV_PATH
+    endif
 endif

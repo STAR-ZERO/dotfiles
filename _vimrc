@@ -14,15 +14,12 @@ Bundle 'quickrun.vim'
 Bundle 'project.tar.gz'
 Bundle 'ShowMarks'
 Bundle 'BufOnly.vim'
-"SpiderMoney or Rihno or node.js required
-"brew install spidermonkey
-Bundle 'basyura/jslint.vim'
+Bundle 'scrooloose/syntastic'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'tpope/vim-rails'
 Bundle 'ujihisa/unite-colorscheme'
 
 filetype plugin indent on
-
 
 "シンタックス
 syntax on
@@ -70,8 +67,19 @@ autocmd FileType xhtml set indentexpr&
 "バッファを閉じる
 noremap <C-Q> :bdel<CR>
 
+"保存
+noremap <C-S> :w<CR>
+
 "crontabの時はバックアップしない
 autocmd BufRead /tmp/crontab.* :set nobackup nowritebackup
+
+".vimrc .gvimrc編集
+nnoremap <silent> ,ev :<C-u>edit $MYVIMRC<CR>
+nnoremap <silent> ,eg  :<C-u>edit $MYGVIMRC<CR>
+
+".vimrc .gvimrcリロード
+nnoremap <silent> ,rv :<C-u>source $MYVIMRC \| if has('gui_running') \| source $MYGVIMRC \| endif <CR>
+nnoremap <silent> ,rg :<C-u>source $MYGVIMRC<CR>
 
 ""neocomplcache設定
 let g:neocomplcache_enable_at_startup=1
@@ -134,14 +142,11 @@ function! s:unite_my_settings()
 endfunction
 autocmd FileType unite call s:unite_my_settings()
 
-
-"jslint.vim
-function! s:javascript_filetype_settings()
-    autocmd BufLeave     <buffer> call jslint#clear()
-    autocmd BufWritePost <buffer> call jslint#check()
-    autocmd CursorMoved  <buffer> call jslint#message()
-endfunction
-autocmd FileType javascript call s:javascript_filetype_settings()
+" syntastic
+let g:syntastic_mode_map = { 'mode': 'active',
+  \ 'active_filetypes': ['javascript'],
+  \ 'passive_filetypes': [] }
+let g:syntastic_javascript_checker = 'jshint'
 
 "rails.vim
 let g:rails_level=4
