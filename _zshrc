@@ -62,9 +62,7 @@ done
 source ~/.nvm/nvm.sh
 #nvm alias default 0.6.17
 
-#rvm
-source ~/.rvm/scripts/rvm
-
 #editor
 export EDITOR=/usr/bin/vim
 
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
