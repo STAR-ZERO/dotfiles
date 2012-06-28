@@ -1,4 +1,7 @@
-# dotfiles-vim
+# zsh Setting
+write later
+
+# Vim Setting
 Vim setting fils
 Use MacVim http://code.google.com/p/macvim-kaoriya/
 
