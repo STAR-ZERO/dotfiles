@@ -1,3 +1,15 @@
+# Install & Setting
+###git clone
+    $ git clone git://github.com/mitukiii/dotfiles.git ~/dotfiles
+
+###create symbolic link
+
+    $ ln -s ~/dotfiles/_zshrc ~/.zshrc
+    $ ln -s ~/dotfiles/_vimrc ~/.vimrc
+    $ ln -s ~/dotfiles/_gvimrc ~/.gvimrc
+    $ ln -s ~/dotfiles/vimfiles ~/.vim
+    $ ln -s ~/dotfiles/_screenrc ~/.screenrc
+
 # zsh Setting
 write later
 
@@ -5,29 +17,18 @@ write later
 Vim setting fils
 Use MacVim http://code.google.com/p/macvim-kaoriya/
 
-## Install & Setting
-###git clone
-    $ git clone git@github.com:STAR-ZERO/dotfiles-vim.git ~/dotfiles
-
 ###submodule init,update
 
     $ cd ~/dotfiles
     $ git submodule init
     $ git submodule update
 
-
-###create symbolic link
-    $ ln -s ~/dotfiles/_vimrc ~/.vimrc
-    $ ln -s ~/dotfiles/_gvimrc ~/.gvimrc
-    $ ln -s ~/dotfiles/vimfiles ~/.vim
-
-
 ###plugin install (Vim command)
     :BundleInstall
 
 
 ##Plugins
-Plugin is managed by Vundle. 
+Plugin is managed by Vundle.
 
 * Shougo/neocomplcache
 
@@ -58,5 +59,17 @@ Plugin is managed by Vundle.
 * tpope/vim-rails
 
 * ujihisa/unite-colorscheme
+
+
+# screen setting
+install vertical split screen
+
+    $ git clone git://git.savannah.gnu.org/screen.git
+    $ cd screen/src
+    $ autoconf
+    $ autoheader
+    $ ./configure
+    $ make
+    $ sudo make install
 
 
