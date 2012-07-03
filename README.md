@@ -73,3 +73,8 @@ install vertical split screen
     $ sudo make install
 
 
+if autoconf not found
+
+    $ brew install automake
+    $ brew link autoconf
+

@@ -1,20 +1,31 @@
-# エンコーディング
-defencodig utf-8
+# エンコード
+defutf8 on
+defkanji utf-8
+encoding utf-8 utf-8
+defencoding utf-8
 # スタートアップメニューの削除
 startup_message off
 # 256色表示設定
 term xterm-256color
 # 端末が落ちたら自動的にデタッチする
 autodetach on
-#メッセージを表示する時間(秒単位)
+# メッセージを表示する時間(秒単位)
 msgwait 5
-#次のメッセージを表示するまでの遅延時間(秒単位)
+# 次のメッセージを表示するまでの遅延時間(秒単位)
 msgminwait 1
 # ステータスラインを表示
-hardstatus alwayslastline "[%02c] %`%-w%{=b bw}%n %t%{-}%+w"
+hardstatus alwayslastline "(｡◕‿◕｡) [%02c] %`%-w%{=b bw}%n %t%{-}%+w (｡◕‿◕｡)"
 # Vim, less等終了後にクリア
 altscreen on
 # キーバインド
-# あとで考える
+escape ^Jj
+bind j eval 'command -c REGION' 'echo "2: split / 1: only / 0: remove / o: focus r: resize"'
+bind -c REGION 2 split
+bind -c REGION 1 only
+bind -c REGION 0 remove
+bind -c REGION o focus
+bind -c REGION r eval 'command -c RESIZE' 'echo "j: -1 / k: +1 / other: quit"'
+bind -c RESIZE j eval 'resize +1' 'command -c RESIZE'
+bind -c RESIZE k eval 'resize -1' 'command -c RESIZE'
 # shell
 shell $SHELL
