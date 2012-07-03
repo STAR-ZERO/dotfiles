@@ -1,0 +1,20 @@
+# エンコーディング
+defencodig utf-8
+# スタートアップメニューの削除
+startup_message off
+# 256色表示設定
+term xterm-256color
+# 端末が落ちたら自動的にデタッチする
+autodetach on
+#メッセージを表示する時間(秒単位)
+msgwait 5
+#次のメッセージを表示するまでの遅延時間(秒単位)
+msgminwait 1
+# ステータスラインを表示
+hardstatus alwayslastline "[%02c] %`%-w%{=b bw}%n %t%{-}%+w"
+# Vim, less等終了後にクリア
+altscreen on
+# キーバインド
+# あとで考える
+# shell
+shell $SHELL

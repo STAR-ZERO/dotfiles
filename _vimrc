@@ -88,7 +88,7 @@ let g:neocomplcache_snippets_dir=$HOME.'/.vim/snippets'
 "大文字が入力されるまで大文字小文字を無視する
 let g:neocomplcache_enable_smart_case=1
 "最初の候補を選択する
-let g:neocomplcache_enable_auto_select=1
+"let g:neocomplcache_enable_auto_select=1
 "補完をキャンセル
 inoremap <expr><C-H> neocomplcache#smart_close_popup()."\<C-H>"
 "補完を表示
@@ -99,7 +99,7 @@ noremap es :<C-U>NeoComplCacheEditSnippets<CR>
 "Enterで補完を確定
 inoremap <expr><CR>  pumvisible() ? neocomplcache#close_popup() : "<CR>"
 "TABで補完を選択
-inoremap <expr><TAB> pumvisible() ? "\<C-N>" : "\<TAB>"
+inoremap <expr><TAB> pumvisible() ? "<C-N>" : "<TAB>"
 
 
 ""Unite設定
@@ -163,3 +163,4 @@ function! MagicComment()
     call setpos(".", pos)
 endfunction
 map <silent> <F12> :call MagicComment()<CR>
+
