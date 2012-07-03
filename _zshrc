@@ -35,8 +35,6 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-#PROMPT customize#PROMPT='%{$fg_bold[yellow]%}(｡◕‿◕｡)%{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
-#PROMPT=$'%{\e[$[32+$RANDOM % 5]m%}(｡◕‿◕｡)%{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
 FACE_CHAR=("(｡◕‿◕｡) " "(･∀･)ﾉ " "( ﾟДﾟ) " "(｡╹ω╹｡)" "♡♡♡♡" "☆☆☆☆")
 PROMPT=$'%{\e[$[32+$RANDOM % 5]m%}$FACE_CHAR[$[$RANDOM % ${#FACE_CHAR[@]} + 1]]%{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
 
