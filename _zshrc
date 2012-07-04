@@ -40,6 +40,8 @@ PROMPT=$'%{\e[$[32+$RANDOM % 5]m%}$FACE_CHAR[$[$RANDOM % ${#FACE_CHAR[@]} + 1]]%
 
 # alias
 alias exit=" exit" #履歴を辿った時にカーソルが崩れるため
+alias cl="clear"
+alias sc="screen"
 
 #Homebrew
 export PATH=/usr/local/bin:$PATH
