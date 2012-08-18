@@ -16,8 +16,8 @@ Bundle 'ShowMarks'
 Bundle 'BufOnly.vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'kchmck/vim-coffee-script'
-Bundle 'tpope/vim-rails'
 Bundle 'ujihisa/unite-colorscheme'
+Bundle 'scrooloose/nerdtree'
 
 filetype plugin indent on
 
@@ -148,19 +148,9 @@ let g:syntastic_mode_map = { 'mode': 'active',
   \ 'passive_filetypes': [] }
 let g:syntastic_javascript_checker = 'jshint'
 
-"rails.vim
-let g:rails_level=4
-let g:rails_default_file="app/controllers/application.rb"
-let g:rails_default_database="sqlite3"
-
-" magic comment
-function! MagicComment()
-    let magic_comment = "# -*- coding: utf-8 -*-\n"
-    let pos = getpos(".")
-    call cursor(1, 0)
-    execute ":normal i" . magic_comment
-    execute ":normal XX"
-    call setpos(".", pos)
-endfunction
-map <silent> <F12> :call MagicComment()<CR>
+" NERDTree
+"NERDTreeの表示切り替え
+noremap <C-E> :NERDTreeToggle<CR>
+"隠しファイルを表示
+let g:NERDTreeShowHidden=1
 
