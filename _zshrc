@@ -44,7 +44,7 @@ alias cl="clear"
 alias sc="screen"
 
 #Homebrew
-export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 #Android
 export PATH=$PATH:/Applications/android-sdk-macosx/tools
