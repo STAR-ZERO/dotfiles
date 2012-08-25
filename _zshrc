@@ -70,3 +70,6 @@ export EDITOR=/usr/bin/vim
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 source ~/.rvm/scripts/rvm
 
+#php-version
+export PHP_VERSIONS=$HOME/local/php/versions
+source $(brew --prefix php-version)/php-version.sh
