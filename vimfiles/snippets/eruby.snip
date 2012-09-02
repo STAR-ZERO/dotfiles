@@ -1,0 +1,32 @@
+snippet end
+abbr end tag
+    <% end %>
+
+snippet form_for
+abbr form_for
+    <%= form_for(${1}) do |f| %>
+
+snippet text_field
+abbr f.text_field
+    <%= f.text_field ${1}, {${2}} %>
+
+snippet password_field
+abbr f.password_field
+    <%= f.password_field ${1}, {${2}} %>
+
+snippet text_area
+abbr f.text_area
+    <%= f.text_area ${1}, {${2}} %>
+
+snippet radio_button
+abbr f.radio_button
+    <%= f.radio_button ${1}, '${2}', {${3}} %>
+
+snippet check_box
+abbr f.check_box
+    <%= f.check_box ${1}, {${2}}, '${3}', '${4}' %>
+
+snippet file_field
+abbr f.file_field
+    <%= f.file_field ${1}, {${2}} %>
+
