@@ -29,8 +29,9 @@ set enc=utf-8
 set fenc=utf-8
 set fencs=iso-2022-jp,utf-8,euc-jp,cp932
 
-"swpを作らない
-set noswapfile
+"swpファイル
+set swapfile
+set directory=~/.vim/tmp
 
 "行番号
 set number
