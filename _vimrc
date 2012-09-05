@@ -24,11 +24,6 @@ filetype plugin indent on
 "シンタックス
 syntax on
 
-"文字コードの指定
-set enc=utf-8
-set fenc=utf-8
-set fencs=iso-2022-jp,utf-8,euc-jp,cp932
-
 "swpファイル
 set swapfile
 set directory=~/.vim/tmp
