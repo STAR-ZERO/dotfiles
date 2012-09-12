@@ -18,6 +18,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'ujihisa/unite-colorscheme'
 Bundle 'scrooloose/nerdtree'
+Bundle 'tpope/vim-fugitive'
 
 filetype plugin indent on
 
