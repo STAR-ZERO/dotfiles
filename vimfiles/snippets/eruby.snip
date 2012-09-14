@@ -2,9 +2,14 @@ snippet end
 abbr end tag
     <% end %>
 
+snippet image_tag
+abbr image_tag
+    <%= image_tag '${1}' %>
+
 snippet form_for
 abbr form_for
     <%= form_for(${1}) do |f| %>
+    <% end %>
 
 snippet text_field
 abbr f.text_field
@@ -29,4 +34,12 @@ abbr f.check_box
 snippet file_field
 abbr f.file_field
     <%= f.file_field ${1}, {${2}} %>
+
+snippet hidden_field
+abbr f.hidden_field
+    <%= f.hidden_field ${1}, {${2}} %>
+
+snippet select
+abbr f.select
+    <%= f.select ${1}, ${2}, {${3}}, {${4}} %>
 
