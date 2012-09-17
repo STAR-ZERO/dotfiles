@@ -9,6 +9,7 @@
     $ ln -s ~/dotfiles/_gvimrc ~/.gvimrc
     $ ln -s ~/dotfiles/vimfiles ~/.vim
     $ ln -s ~/dotfiles/_screenrc ~/.screenrc
+    $ ln -s ~/dotfiles/_gitconfig ~/.gitconfig
 
 # zsh Setting
 write later
