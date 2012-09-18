@@ -19,6 +19,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'ujihisa/unite-colorscheme'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-fugitive'
+Bundle 'closetag.vim'
 
 filetype plugin indent on
 
@@ -159,3 +160,6 @@ noremap <C-E> :NERDTreeToggle<CR>
 "隠しファイルを表示
 let g:NERDTreeShowHidden=1
 
+" closetag.vim
+:let b:closetag_html_style=1
+au Filetype html,xml,xsl,ant source $VIMRUNTIME/macros/closetag.vim
