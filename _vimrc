@@ -32,6 +32,12 @@ syntax on
 set swapfile
 set directory=~/.vim/tmp
 
+"Vimからクリップボードにもコピー
+set clipboard=unnamed,autoselect
+
+"コマンドラインの高さ
+set cmdheight=1
+
 "行番号
 set number
 

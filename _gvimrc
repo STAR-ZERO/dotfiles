@@ -15,8 +15,8 @@ if has('gui_macvim')
     set guioptions-=T
     "カラースキーム
     colorscheme desert
-    "Vimからクリップボードにもコピー
-    set clipboard=unnamed,autoselect
+    "コマンドラインの高さ
+    set cmdheight=2
     "PATH
     let ZSH_PATH = '/bin/zsh'
     if executable(ZSH_PATH)
