@@ -21,6 +21,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-fugitive'
 Bundle 'closetag.vim'
 Bundle 'tpope/vim-rails'
+Bundle 'surround.vim'
 
 filetype plugin indent on
 
@@ -162,8 +163,8 @@ noremap <C-E> :NERDTreeToggle<CR>
 let g:NERDTreeShowHidden=1
 
 " closetag.vim
-:let b:closetag_html_style=1
-au Filetype html,xml,xsl,ant source $VIMRUNTIME/macros/closetag.vim
+let g:closetag_html_style=1
+au Filetype html,xml,xsl,ant,eruby source ~/.vim/bundle/closetag.vim/plugin/closetag.vim
 
 " vim-rails
 nnoremap <Space>r :R<CR>
