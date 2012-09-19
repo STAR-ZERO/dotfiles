@@ -20,6 +20,7 @@ Bundle 'ujihisa/unite-colorscheme'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-fugitive'
 Bundle 'closetag.vim'
+Bundle 'tpope/vim-rails'
 
 filetype plugin indent on
 
@@ -163,3 +164,11 @@ let g:NERDTreeShowHidden=1
 " closetag.vim
 :let b:closetag_html_style=1
 au Filetype html,xml,xsl,ant source $VIMRUNTIME/macros/closetag.vim
+
+" vim-rails
+nnoremap <Space>r :R<CR>
+nnoremap <Space>a :A<CR>
+nnoremap <Space>m :Rmodel<Space>
+nnoremap <Space>c :Rcontroller<Space>
+nnoremap <Space>v :Rview<Space>
+nnoremap <Space>s :Rspec<Space>
