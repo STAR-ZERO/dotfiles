@@ -5,6 +5,7 @@
 ###create symbolic link
 
     $ ln -s ~/dotfiles/_zshrc ~/.zshrc
+    $ ln -s ~/dotfiles/_zshenv ~/.zshenv
     $ ln -s ~/dotfiles/_vimrc ~/.vimrc
     $ ln -s ~/dotfiles/_gvimrc ~/.gvimrc
     $ ln -s ~/dotfiles/vimfiles ~/.vim

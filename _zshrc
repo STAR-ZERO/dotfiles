@@ -42,6 +42,7 @@ PROMPT=$'%{\e[$[32+$RANDOM % 5]m%}$FACE_CHAR[$[$RANDOM % ${#FACE_CHAR[@]} + 1]]%
 alias exit=" exit" #履歴を辿った時にカーソルが崩れるため
 alias cl="clear"
 alias sc="screen"
+alias up="cd ../"
 
 #Homebrew
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
@@ -59,18 +60,6 @@ do
     export PATH=$PATH:$BIN_DIR/$BIN_SUB
 done
 
-#node
-source ~/.nvm/nvm.sh
-
 #editor
 export EDITOR=/usr/bin/vim
 
-#rvm
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-source ~/.rvm/scripts/rvm
-
-#phpenv
-if [ -f $HOME/.phpenv/bin/phpenv ]; then
-    export PATH=$PATH:$HOME/.phpenv/bin
-    eval "$(phpenv init -)"
-fi

@@ -1,0 +1,13 @@
+# rvm
+PATH=$PATH:$HOME/.rvm/bin
+source ~/.rvm/scripts/rvm
+
+# phpenv
+if [ -f $HOME/.phpenv/bin/phpenv ]; then
+    export PATH=$PATH:$HOME/.phpenv/bin
+    eval "$(phpenv init -)"
+fi
+
+# nvm
+source ~/.nvm/nvm.sh
+
