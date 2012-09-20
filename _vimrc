@@ -22,6 +22,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'closetag.vim'
 Bundle 'tpope/vim-rails'
 Bundle 'surround.vim'
+Bundle 'tpope/vim-endwise'
 
 filetype plugin indent on
 
@@ -110,8 +111,11 @@ imap <C-K> <Plug>(neocomplcache_snippets_expand)
 smap <C-K> <Plug>(neocomplcache_snippets_expand)
 "スニペット編集
 noremap es :<C-U>NeoComplCacheEditSnippets<CR>
-"Enterで補完を確定
-inoremap <expr><CR>  pumvisible() ? neocomplcache#close_popup() : "<CR>"
+"Enterで補完を確定(endwiseとの関係でおかしくなる対策）
+function! s:my_crinsert()
+    return pumvisible() ? neocomplcache#close_popup() : "\<Cr>"
+endfunction
+inoremap <silent> <CR> <C-R>=<SID>my_crinsert()<CR>
 "TABで補完を選択
 inoremap <expr><TAB> pumvisible() ? "<C-N>" : "<TAB>"
 
