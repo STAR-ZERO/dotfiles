@@ -23,6 +23,8 @@ Bundle 'closetag.vim'
 Bundle 'tpope/vim-rails'
 Bundle 'surround.vim'
 Bundle 'tpope/vim-endwise'
+Bundle 'Shougo/vimproc'
+Bundle 'karakaram/vim-quickrun-phpunit'
 
 filetype plugin indent on
 
@@ -183,3 +185,24 @@ nnoremap <Space>m :Rmodel<Space>
 nnoremap <Space>c :Rcontroller<Space>
 nnoremap <Space>v :Rview<Space>
 nnoremap <Space>s :Rspec<Space>
+
+" QuickRun
+let g:quickrun_config = {}
+let g:quickrun_config['_'] = {}
+let g:quickrun_config['_']['runner'] = 'vimproc'
+let g:quickrun_config['_']['runner/vimproc/updatetime'] = 100
+
+" PHPUnit
+augroup QuickRunPHPUnit
+  autocmd!
+  autocmd BufWinEnter,BufNewFile *Test.php set filetype=phpunit
+augroup END
+let g:quickrun_config['phpunit'] = {}
+let g:quickrun_config['phpunit']['outputter'] = 'phpunit'
+let g:quickrun_config['phpunit']['command'] = 'phpunit'
+let g:quickrun_config['phpunit']['cmdopt'] = ''
+let g:quickrun_config['phpunit']['exec'] = '%c %o %s'
+let g:quickrun_config['phpunit']['outputter/phpunit/running_mark'] = 'running...'
+let g:quickrun_config['phpunit']['outputter/phpunit/height'] = 3
+let g:quickrun_config['phpunit']['outputter/phpunit/auto_open'] = 1
+
