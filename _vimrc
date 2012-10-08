@@ -206,3 +206,11 @@ let g:quickrun_config['phpunit']['outputter/phpunit/running_mark'] = 'running...
 let g:quickrun_config['phpunit']['outputter/phpunit/height'] = 3
 let g:quickrun_config['phpunit']['outputter/phpunit/auto_open'] = 1
 
+" RSpec
+augroup QuickRunRSpec
+  autocmd!
+  autocmd BufWinEnter,BufNewFile *_spec.rb set filetype=ruby.rspec
+augroup END
+let g:quickrun_config['ruby.rspec'] = {}
+let g:quickrun_config['ruby.rspec']['command'] = 'rspec'
+
