@@ -167,9 +167,10 @@ autocmd FileType unite call s:unite_my_settings()
 
 " syntastic
 let g:syntastic_mode_map = { 'mode': 'active',
-  \ 'active_filetypes': ['javascript'],
+  \ 'active_filetypes': ['javascript', 'php'],
   \ 'passive_filetypes': [] }
 let g:syntastic_javascript_checker = 'jshint'
+let g:syntastic_phpcs_conf = '--standard=CakePHP'
 
 " NERDTree
 "NERDTreeの表示切り替え
