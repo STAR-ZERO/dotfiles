@@ -35,6 +35,9 @@ syntax on
 set swapfile
 set directory=~/.vim/tmp
 
+"バックアップファイルを作成しない
+set nobackup
+
 "Vimからクリップボードにもコピー
 set clipboard=unnamed,autoselect
 
