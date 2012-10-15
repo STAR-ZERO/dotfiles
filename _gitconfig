@@ -4,7 +4,7 @@
 [color]
     ui = true
 [merge]
-    keepBackup = false;
+    keepBackup = false
     tool = p4merge
 [mergetool "p4merge"]
     cmd = p4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
