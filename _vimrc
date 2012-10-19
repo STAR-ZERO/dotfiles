@@ -25,6 +25,7 @@ Bundle 'surround.vim'
 Bundle 'tpope/vim-endwise'
 Bundle 'Shougo/vimproc'
 Bundle 'karakaram/vim-quickrun-phpunit'
+Bundle 'violetyk/cake.vim'
 
 filetype plugin indent on
 
@@ -185,10 +186,16 @@ au Filetype html,xml,xsl,ant,eruby source ~/.vim/bundle/closetag.vim/plugin/clos
 " vim-rails
 nnoremap <Space>r :R<CR>
 nnoremap <Space>a :A<CR>
-nnoremap <Space>m :Rmodel<Space>
-nnoremap <Space>c :Rcontroller<Space>
-nnoremap <Space>v :Rview<Space>
-nnoremap <Space>s :Rspec<Space>
+nnoremap <Space>rm :Rmodel<Space>
+nnoremap <Space>rc :Rcontroller<Space>
+nnoremap <Space>rv :Rview<Space>
+nnoremap <Space>rs :Rspec<Space>
+
+" CakePHP
+let g:cakephp_enable_auto_mode=1
+nnoremap <Space>cc :Ccontroller<Space>
+nnoremap <Space>cm :Cmodel<Space>
+nnoremap <Space>cv :Cview<Space>
 
 " QuickRun
 let g:quickrun_config = {}
