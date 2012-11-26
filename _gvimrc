@@ -14,7 +14,7 @@ if has('gui_macvim')
     "ツールバーを非表示
     set guioptions-=T
     "カラースキーム
-    colorscheme desert
+    colorscheme Tomorrow-Night
     "コマンドラインの高さ
     set cmdheight=2
     "PATH

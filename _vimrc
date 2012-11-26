@@ -26,6 +26,7 @@ Bundle 'tpope/vim-endwise'
 Bundle 'Shougo/vimproc'
 Bundle 'karakaram/vim-quickrun-phpunit'
 Bundle 'violetyk/cake.vim'
+Bundle 'chriskempson/vim-tomorrow-theme'
 
 filetype plugin indent on
 
