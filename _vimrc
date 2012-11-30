@@ -27,6 +27,7 @@ Bundle 'Shougo/vimproc'
 Bundle 'karakaram/vim-quickrun-phpunit'
 Bundle 'violetyk/cake.vim'
 Bundle 'chriskempson/vim-tomorrow-theme'
+Bundle 'basyura/unite-rails'
 
 filetype plugin indent on
 
@@ -191,6 +192,8 @@ nnoremap <Space>rm :Rmodel<Space>
 nnoremap <Space>rc :Rcontroller<Space>
 nnoremap <Space>rv :Rview<Space>
 nnoremap <Space>rs :Rspec<Space>
+" unite-rails
+nnoremap <C-x> :Unite rails/
 
 " CakePHP
 let g:cakephp_enable_auto_mode=1
