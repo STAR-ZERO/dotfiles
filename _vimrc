@@ -8,7 +8,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 Bundle 'Shougo/neocomplcache'
-Bundle 'Shougo/neocomplcache-snippets-complete'
+Bundle 'Shougo/neosnippet.git'
 Bundle 'Shougo/unite.vim'
 Bundle 'quickrun.vim'
 Bundle 'project.tar.gz'
@@ -26,8 +26,8 @@ Bundle 'tpope/vim-endwise'
 Bundle 'Shougo/vimproc'
 Bundle 'karakaram/vim-quickrun-phpunit'
 Bundle 'violetyk/cake.vim'
-Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'basyura/unite-rails'
+Bundle 'STAR-ZERO/vim-tomorrow-theme'
 
 filetype plugin indent on
 
