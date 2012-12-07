@@ -10,7 +10,7 @@ Bundle 'gmarik/vundle'
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/neosnippet.git'
 Bundle 'Shougo/unite.vim'
-Bundle 'quickrun.vim'
+Bundle 'thinca/vim-quickrun'
 Bundle 'project.tar.gz'
 Bundle 'ShowMarks'
 Bundle 'BufOnly.vim'
@@ -28,6 +28,7 @@ Bundle 'karakaram/vim-quickrun-phpunit'
 Bundle 'violetyk/cake.vim'
 Bundle 'basyura/unite-rails'
 Bundle 'STAR-ZERO/vim-tomorrow-theme'
+Bundle 'AnsiEsc.vim'
 
 filetype plugin indent on
 
@@ -82,6 +83,10 @@ set expandtab
 set autoindent
 "オートインデントの文字数
 set shiftwidth=4
+
+" 横分割時は下へ､ 縦分割時は右へ新しいウィンドウが開くようにする
+set splitbelow
+set splitright
 
 "HTMLはインデントを無効にする
 autocmd FileType html set indentexpr&
@@ -202,10 +207,13 @@ nnoremap <Space>cm :Cmodel<Space>
 nnoremap <Space>cv :Cview<Space>
 
 " QuickRun
+nnoremap <Space>t :QuickRun<CR>
+nnoremap <Space>q :bwipeout [quickrun<CR>
 let g:quickrun_config = {}
 let g:quickrun_config['_'] = {}
 let g:quickrun_config['_']['runner'] = 'vimproc'
 let g:quickrun_config['_']['runner/vimproc/updatetime'] = 100
+let g:quickrun_config['*'] = {'split' : 'belowright 8sp', 'running_mark' : '(」・ω・)」うー!(/・ω・)/にゃー!'}
 
 " PHPUnit
 augroup QuickRunPHPUnit
@@ -222,10 +230,22 @@ let g:quickrun_config['phpunit']['outputter/phpunit/height'] = 3
 let g:quickrun_config['phpunit']['outputter/phpunit/auto_open'] = 1
 
 " RSpec
-augroup QuickRunRSpec
-  autocmd!
-  autocmd BufWinEnter,BufNewFile *_spec.rb set filetype=ruby.rspec
-augroup END
-let g:quickrun_config['ruby.rspec'] = {}
-let g:quickrun_config['ruby.rspec']['command'] = 'rspec'
+let g:quickrun_config['rspec/bundle'] = {}
+let g:quickrun_config['rspec/bundle']['type'] = 'rspec/bundle'
+let g:quickrun_config['rspec/bundle']['command'] = 'rspec'
+let g:quickrun_config['rspec/bundle']['outputter'] = 'buffer'
+let g:quickrun_config['rspec/bundle']['exec'] = 'bundle exec %c %o --color --tty %s'
+
+let g:quickrun_config['rspec/normal'] = {}
+let g:quickrun_config['rspec/normal']['type'] = 'rspec/normal'
+let g:quickrun_config['rspec/normal']['command'] = 'rspec'
+let g:quickrun_config['rspec/normal']['outputter'] = 'buffer'
+let g:quickrun_config['rspec/normal']['exec'] = '%c %o --color --tty %s'
+
+function! RSpecQuickRun()
+  let b:quickrun_config = {'type': 'rspec/bundle'}
+endfunction
+
+autocmd FileType quickrun AnsiEsc
+autocmd BufReadPost *_spec.rb call RSpecQuickRun()
 
