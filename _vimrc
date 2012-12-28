@@ -19,6 +19,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'ujihisa/unite-colorscheme'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-fugitive'
+Bundle 'gregsexton/gitv'
 Bundle 'closetag.vim'
 Bundle 'tpope/vim-rails'
 Bundle 'surround.vim'
@@ -97,6 +98,8 @@ noremap <C-Q> :bdel<CR>
 
 "保存
 noremap <C-S> :w<CR>
+"連続ペース
+noremap <silent> <C-p> "0p<CR>
 
 "crontabの時はバックアップしない
 autocmd BufRead /tmp/crontab.* :set nobackup nowritebackup
@@ -108,6 +111,18 @@ nnoremap <silent> ,eg  :<C-u>edit $MYGVIMRC<CR>
 ".vimrc .gvimrcリロード
 nnoremap <silent> ,rv :<C-u>source $MYVIMRC \| if has('gui_running') \| source $MYGVIMRC \| endif <CR>
 nnoremap <silent> ,rg :<C-u>source $MYGVIMRC<CR>
+
+""fugitive
+"git status
+nnoremap <silent> ,gs :Gstatus<CR>
+"git diff
+nnoremap <silent> ,gd :Gdiff<CR>
+
+""gitv
+"ブラウザモード
+nnoremap <silent> ,gk :Gitv<CR>
+"ファイルモード
+nnoremap <silent> ,gv :Gitv!<CR>
 
 ""neocomplcache設定
 let g:neocomplcache_enable_at_startup=1
@@ -141,11 +156,11 @@ let g:unite_split_rule="botright"
 "ウィンドウ分割の高さ
 let g:unite_winheight=15
 "バッファ一覧
-noremap <C-P> :Unite buffer<CR>
+noremap <C-Y> :Unite buffer<CR>
 "ファイル一覧
 noremap <C-N> :Unite -buffer-name=file file file/new<CR>
 "レジスタ一覧
-noremap <C-Y> :Unite -buffer-name=register register<CR>
+"noremap <C-Y> :Unite -buffer-name=register register<CR>
 "最近使ったファイルの一覧
 noremap <C-Z> :Unite file_mru<CR>
 "前回のUniteバッファ
