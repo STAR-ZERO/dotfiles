@@ -4,20 +4,50 @@ abbr end tag
 
 snippet image_tag
 abbr image_tag
-    <%= image_tag '${1}' %>
+    <%= image_tag '${1:src}' %>
 
 snippet form_for
 abbr form_for
-    <%= form_for(${1}) do |f| %>
+    <%= form_for(${1:model_valiable}) do |f| %>
     <% end %>
+
+snippet form_tag
+abbr form_tag
+    <%= form_tag(${1:url_options}) do %>
+    <% end %>
+
+snippet submit
+abbr submit
+    <%= f.submit ${1:value} %>
+
+snippet submit_tag
+abbr submit_tag
+    <%= submit_tag ${1:value} %>
 
 snippet text_field
 abbr f.text_field
-    <%= f.text_field ${1}, {${2}} %>
+    <%= f.text_field ${1:name}, ${2:value}, {${3:options}} %>
+
+snippet text_field_tag
+abbr text_field_tag
+    <%= text_field_tag ${1:name}, ${2:value}, {${3:options}} %>
+
+snippet label
+abbr f.label
+    <%= f.label ${1}, {${2}} %>
+
+snippet label_tag
+abbr label_tag
+    <%= label_tag ${1}, ${2} %>
+
 
 snippet password_field
 abbr f.password_field
-    <%= f.password_field ${1}, {${2}} %>
+    <%= f.password_field ${1:name}, ${2:value}, {${3:options}} %>
+
+snippet password_field_tag
+abbr password_field_tag
+    <%= password_field_tag ${1:name}, ${2:value}, {${2:options}} %>
 
 snippet text_area
 abbr f.text_area
@@ -37,7 +67,11 @@ abbr f.file_field
 
 snippet hidden_field
 abbr f.hidden_field
-    <%= f.hidden_field ${1}, {${2}} %>
+    <%= f.hidden_field ${1:name}, ${2:value} %>
+
+snippet hidden_field_tag
+abbr hidden_field_tag
+    <%= hidden_field_tag ${1:name}, ${2:value} %>
 
 snippet select
 abbr f.select

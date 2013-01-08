@@ -1,5 +1,98 @@
-#alert
 snippet encoding
 abbr encoding
     # -*- encoding: utf-8 -*-
 
+
+snippet yield
+abbr yield
+    yield
+
+snippet private
+abbr private
+    private
+
+snippet class
+abbr class
+    class ${1}
+    end
+
+snippet def
+abbr def
+    def ${1}
+    end
+
+snippet to_i
+abbr to_i
+    to_i
+
+snippet to_s
+abbr to_s
+    to_s
+
+snippet inspect
+abbr inspect
+    inspect
+
+###########################
+# Rails
+###########################
+# Controller
+snippet ApplicationController
+abbr ApplicationController
+    ApplicationController
+
+snippet Controller_class
+abbr Controller_class
+    class ${1:ClassName}Controller < ApplicationController
+
+    end
+
+snippet params
+abbr params
+    params[${1:key}]${2}
+
+snippet cookies
+abbr cookies
+    cookies[${1:key}]${2}
+
+snippet session
+abbr session
+    session[${1:key}]${2}
+
+# Model
+snippet ActiveRecord::Base
+abbr ActiveRecord::Base
+    ActiveRecord::Base
+
+snippet Model_class
+abbr Model_class
+    class ${1:ClassName} < ActiveRecord::Base
+    end
+
+snippet ActiveModel::EachValidator
+abbr ActiveModel::EachValidator
+    ActiveModel::EachValidator
+
+snippet ActiveModel::EachValidator_class
+abbr ActiveModel::EachValidator_class
+    class ${1:ClassName} < ActiveModel::EachValidator
+
+      def validate_each(record, attribute, value)
+      end
+    end
+
+snippet belongs_to
+abbr belongs_to
+    belongs_to :${1:ModelName}
+
+snippet has_many
+abbr has_many
+    has_many :${1:ModelName}
+
+snippet has_one
+abbr has_one
+    has_one :${1:ModelName}
+
+snippet has_and_belongs_to_many
+abbr has_and_belongs_to_many
+    has_and_belongs_to_many :${1:ModelName}
