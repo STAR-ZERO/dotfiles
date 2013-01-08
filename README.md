@@ -25,43 +25,17 @@ Use MacVim http://code.google.com/p/macvim-kaoriya/
     $ git submodule init
     $ git submodule update
 
+###create NeoBundle directory
+
+    $ mkdir ~/.vim/bundle
+
 ###plugin install (Vim command)
-    :BundleInstall
 
+    :NeoBundleInstall
 
-##Plugins
-Plugin is managed by Vundle.
-
-* Shougo/neocomplcache
-
-* Shougo/neocomplcache-snippets-complete
-
-* Shougo/unite.vim
-
-* scrooloose/syntastic
-  required jshint
-
-* quickrun.vim
-
-* project.tar.gz
-
-* ShowMarks
-
-    modify ~/vim/bundle/ShowMarks/plugin/showmarks.vim line115  
-
-        let s:all_marks = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKL...
-  ↓ ↓ ↓
-
-        let s:all_marks = "abcdefghijklmnopqrstuvwxyz"
-
-* BufOnly.vim
-
-* kchmck/vim-coffee-script
-
-* tpope/vim-rails
-
-* ujihisa/unite-colorscheme
-
+###Make vimproc
+    $ cd ~/.vim/bundle/vimproc
+    $ make -f make_mac.mak
 
 # screen setting
 install vertical split screen
