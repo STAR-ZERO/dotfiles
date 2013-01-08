@@ -2,34 +2,36 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/vundle.git/
-call vundle#rc()
+if has('vim_starting')
+  set runtimepath+=~/.vim/neobundle.vim
+endif
 
-Bundle 'gmarik/vundle'
+call neobundle#rc(expand('~/.vim/bundle/'))
 
-Bundle 'Shougo/neocomplcache'
-Bundle 'Shougo/neosnippet.git'
-Bundle 'Shougo/unite.vim'
-Bundle 'thinca/vim-quickrun'
-Bundle 'project.tar.gz'
-Bundle 'ShowMarks'
-Bundle 'BufOnly.vim'
-Bundle 'scrooloose/syntastic'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'ujihisa/unite-colorscheme'
-Bundle 'scrooloose/nerdtree'
-Bundle 'tpope/vim-fugitive'
-Bundle 'gregsexton/gitv'
-Bundle 'closetag.vim'
-Bundle 'tpope/vim-rails'
-Bundle 'surround.vim'
-Bundle 'tpope/vim-endwise'
-Bundle 'Shougo/vimproc'
-Bundle 'karakaram/vim-quickrun-phpunit'
-Bundle 'violetyk/cake.vim'
-Bundle 'basyura/unite-rails'
-Bundle 'STAR-ZERO/vim-tomorrow-theme'
-Bundle 'AnsiEsc.vim'
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+NeoBundle 'Shougo/vimproc'
+
+NeoBundle 'Shougo/neocomplcache'
+NeoBundle 'Shougo/neosnippet.git'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'thinca/vim-quickrun'
+NeoBundle 'project.tar.gz'
+NeoBundle 'BufOnly.vim'
+NeoBundle 'scrooloose/syntastic'
+NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'ujihisa/unite-colorscheme'
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'gregsexton/gitv'
+NeoBundle 'closetag.vim'
+NeoBundle 'tpope/vim-rails'
+NeoBundle 'surround.vim'
+NeoBundle 'tpope/vim-endwise'
+NeoBundle 'violetyk/cake.vim'
+NeoBundle 'basyura/unite-rails'
+NeoBundle 'STAR-ZERO/vim-tomorrow-theme'
+NeoBundle 'AnsiEsc.vim'
 
 filetype plugin indent on
 
@@ -229,20 +231,6 @@ let g:quickrun_config['_'] = {}
 let g:quickrun_config['_']['runner'] = 'vimproc'
 let g:quickrun_config['_']['runner/vimproc/updatetime'] = 100
 let g:quickrun_config['*'] = {'split' : 'belowright 8sp', 'running_mark' : '(」・ω・)」うー!(/・ω・)/にゃー!'}
-
-" PHPUnit
-augroup QuickRunPHPUnit
-  autocmd!
-  autocmd BufWinEnter,BufNewFile *Test.php set filetype=phpunit
-augroup END
-let g:quickrun_config['phpunit'] = {}
-let g:quickrun_config['phpunit']['outputter'] = 'phpunit'
-let g:quickrun_config['phpunit']['command'] = 'phpunit'
-let g:quickrun_config['phpunit']['cmdopt'] = ''
-let g:quickrun_config['phpunit']['exec'] = '%c %o %s'
-let g:quickrun_config['phpunit']['outputter/phpunit/running_mark'] = 'running...'
-let g:quickrun_config['phpunit']['outputter/phpunit/height'] = 3
-let g:quickrun_config['phpunit']['outputter/phpunit/auto_open'] = 1
 
 " RSpec
 let g:quickrun_config['rspec/bundle'] = {}
