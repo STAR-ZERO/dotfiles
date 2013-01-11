@@ -11,6 +11,13 @@
     $ ln -s ~/dotfiles/vimfiles ~/.vim
     $ ln -s ~/dotfiles/_screenrc ~/.screenrc
     $ ln -s ~/dotfiles/_gitconfig ~/.gitconfig
+    $ ln -s ~/dotfiles/bundler-exec/bundler-exec.sh ~/.bundler-exec.sh
+
+###submodule init,update
+
+    $ cd ~/dotfiles
+    $ git submodule init
+    $ git submodule update
 
 # zsh Setting
 write later
@@ -18,12 +25,6 @@ write later
 # Vim Setting
 Vim setting fils
 Use MacVim http://code.google.com/p/macvim-kaoriya/
-
-###submodule init,update
-
-    $ cd ~/dotfiles
-    $ git submodule init
-    $ git submodule update
 
 ###create NeoBundle directory
 
@@ -54,3 +55,6 @@ if autoconf not found
     $ brew install automake
     $ brew link autoconf
 
+# bundler-exec setting
+
+    echo "[ -f ~/.bundler-exec.sh ] && source ~/.bundler-exec.sh" >> ~/.zshrc

@@ -1,3 +1,6 @@
 [submodule "vimfiles/neobundle.vim"]
 	path = vimfiles/neobundle.vim
 	url = git://github.com/Shougo/neobundle.vim.git
+[submodule "bundler-exec"]
+	path = bundler-exec
+	url = git@github.com:STAR-ZERO/bundler-exec.git
