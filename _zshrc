@@ -36,7 +36,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 FACE_CHAR=("(｡◕‿◕｡) " "(･∀･)ﾉ " "( ﾟДﾟ) " "(｡╹ω╹｡)" "♡♡♡♡" "☆☆☆☆")
-PROMPT=$'%{\e[$[32+$RANDOM % 5]m%}$FACE_CHAR[$[$RANDOM % ${#FACE_CHAR[@]} + 1]]%{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
+PICT_CHAR=($'\U1F49A ' $'\U1F3B5 ' $'\U1F300 ' $'\U1F47B ' $'\U1F431 ' )
+
+PROMPT=$'%{\e[$[32+$RANDOM % 5]m%}$PICT_CHAR[$[$RANDOM % ${#PICT_CHAR[@]} + 1]] $FACE_CHAR[$[$RANDOM % ${#FACE_CHAR[@]} + 1]]%{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
 
 # alias
 alias exit=" exit" #履歴を辿った時にカーソルが崩れるため
