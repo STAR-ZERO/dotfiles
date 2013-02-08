@@ -35,10 +35,9 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-FACE_CHAR=("(｡◕‿◕｡) " "(･∀･)ﾉ " "( ﾟДﾟ) " "(｡╹ω╹｡)" "♡♡♡♡" "☆☆☆☆")
-PICT_CHAR=($'\U1F49A ' $'\U1F3B5 ' $'\U1F300 ' $'\U1F47B ' $'\U1F431 ' )
+PICT_CHAR=($'\U1F49A ' $'\U1F3B5 ' $'\U1F300 ' $'\U1F47B ' $'\U1F431 ' $'\U1F436 ' $'\U1F604 ' $'\U2728 ' $'\U1F4A3 ' $'\U1F3B8 ')
 
-PROMPT=$'%{\e[$[32+$RANDOM % 5]m%}$PICT_CHAR[$[$RANDOM % ${#PICT_CHAR[@]} + 1]] $FACE_CHAR[$[$RANDOM % ${#FACE_CHAR[@]} + 1]]%{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
+PROMPT=$'%{\e[$[32+$RANDOM % 5]m%}$PICT_CHAR[$[$RANDOM % ${#PICT_CHAR[@]} + 1]] %{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
 
 # alias
 alias exit=" exit" #履歴を辿った時にカーソルが崩れるため
