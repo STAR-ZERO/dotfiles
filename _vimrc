@@ -32,8 +32,15 @@ NeoBundle 'violetyk/cake.vim'
 NeoBundle 'basyura/unite-rails'
 NeoBundle 'STAR-ZERO/vim-tomorrow-theme'
 NeoBundle 'AnsiEsc.vim'
+NeoBundle 'Lokaltog/vim-powerline'
 
 filetype plugin indent on
+
+"カラースキーム
+set t_Co=256
+colorscheme Tomorrow-Night
+
+set guifont=Ricty\ for\ Powerline:h16
 
 "シンタックス
 syntax on
@@ -94,6 +101,15 @@ set splitright
 "HTMLはインデントを無効にする
 autocmd FileType html set indentexpr&
 autocmd FileType xhtml set indentexpr&
+
+" CTRL-hjklでウィンドウ移動
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+nnoremap <C-h> <C-w>h
+
+" カーソル位置の単語をyankする
+nnoremap vy vawy
 
 "バッファを閉じる
 noremap <C-Q> :bdel<CR>

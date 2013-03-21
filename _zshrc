@@ -85,6 +85,8 @@ done
 
 # tmuxでWidonw名が戻る対応
 DISABLE_AUTO_TITLE=true
+# tmuxのvimでcolorscheme対応
+alias tmux="TERM=screen-256color-bce tmux"
 
 #editor
 #export EDITOR=/usr/bin/vim

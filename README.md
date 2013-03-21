@@ -19,6 +19,27 @@
     $ git submodule init
     $ git submodule update
 
+# font patch
+see [vim-powerline/fontpatcher at develop · Lokaltog/vim-powerline](https://github.com/Lokaltog/vim-powerline/tree/develop/fontpatcher)
+
+    $ brew install fontforge
+    $ git clone https://github.com/Lokaltog/vim-powerline.git vim-powerline
+    $ fontforge -script ./vim-powerline/fontpatcher/fontpatcher ~/Library/Fonts/Ricty-Regular.ttf
+    $ fontforge -script ./vim-powerline/fontpatcher/fontpatcher ~/Library/Fonts/Ricty-Bold.ttf
+
+`Ricty-Regular-Powerline.ttf`, `Ricty-Bold-Powerline.ttf` created in current directory
+
+Double-click to install
+
+# iTerm2 Setting
+### 256color
+Preferences… > Profiles > Terminal > Report Terminal Type  
+select `xterm-256color`
+
+### font
+Preferences… > Profiles > Text > Change font  
+select `Ricty for powerline`
+
 # zsh Setting
 write later
 
@@ -26,15 +47,15 @@ write later
 Vim setting fils
 Use MacVim http://code.google.com/p/macvim-kaoriya/
 
-###create NeoBundle directory
+### Create NeoBundle directory
 
     $ mkdir ~/.vim/bundle
 
-###plugin install (Vim command)
+### plugin install (Vim command)
 
     :NeoBundleInstall
 
-###Make vimproc
+### Make vimproc
     $ cd ~/.vim/bundle/vimproc
     $ make -f make_mac.mak
 
