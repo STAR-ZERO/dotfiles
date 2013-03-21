@@ -83,6 +83,9 @@ do
     export PATH=$PATH:$BIN_DIR/$BIN_SUB
 done
 
+# tmuxでWidonw名が戻る対応
+DISABLE_AUTO_TITLE=true
+
 #editor
 #export EDITOR=/usr/bin/vim
 
