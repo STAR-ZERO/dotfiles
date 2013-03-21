@@ -40,6 +40,9 @@ select `xterm-256color`
 Preferences… > Profiles > Text > Change font  
 select `Ricty for powerline`
 
+- Regular font: 16pt Ricty Regular for Powerline
+- Regular font: 14pt Monaco
+
 # zsh Setting
 write later
 
@@ -60,7 +63,13 @@ Use MacVim http://code.google.com/p/macvim-kaoriya/
     $ make -f make_mac.mak
 
 # tmux setting
-    $ $ brew install reattach-to-user-namespace
+### clipboard
+    $ brew install reattach-to-user-namespace
+
+### tmux-powerline
+    $ brew install https://raw.github.com/Homebrew/homebrew-dupes/master/grep.rb
+    $ cd ~/bin
+    $ git clone git@github.com:STAR-ZERO/tmux-powerline.git
 
 # bundler-exec setting
 add to zshrc

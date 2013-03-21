@@ -37,8 +37,8 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 PICT_CHAR=($'\U1F49A ' $'\U1F3B5 ' $'\U1F300 ' $'\U1F47B ' $'\U1F431 ' $'\U1F436 ' $'\U1F604 ' $'\U2728 ' $'\U1F4A3 ' $'\U1F3B8 ')
 
-PROMPT=$'$PICT_CHAR[$[$RANDOM % ${#PICT_CHAR[@]} + 1]] %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
-RPROMPT=$'%{$fg[green]%}[%d] %{$fg_bold[blue]%}%D{%T}%{$reset_color%}'
+PROMPT=$'$PICT_CHAR[$[$RANDOM % ${#PICT_CHAR[@]} + 1]] %{$fg_bold[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
+RPROMPT=$'%{$fg_bold[green]%}[%d]%{$reset_color%}'
 
 # alias
 alias exit=" exit" #履歴を辿った時にカーソルが崩れるため
@@ -97,3 +97,12 @@ alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"
 
 # bundle exec
 [ -f ~/.bundler-exec.sh ] && source ~/.bundler-exec.sh
+
+# tmux自動起動
+if [ -z $TMUX ]; then
+    if $(tmux has-session); then
+        tmux attach
+    else
+        tmux
+    fi
+fi
