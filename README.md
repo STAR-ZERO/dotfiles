@@ -9,7 +9,7 @@
     $ ln -s ~/dotfiles/_vimrc ~/.vimrc
     $ ln -s ~/dotfiles/_gvimrc ~/.gvimrc
     $ ln -s ~/dotfiles/vimfiles ~/.vim
-    $ ln -s ~/dotfiles/_screenrc ~/.screenrc
+    $ ln -s ~/dotfiles/_tmux.conf ~/.tmux.conf
     $ ln -s ~/dotfiles/_gitconfig ~/.gitconfig
     $ ln -s ~/dotfiles/bundler-exec/bundler-exec.sh ~/.bundler-exec.sh
 
@@ -38,23 +38,10 @@ Use MacVim http://code.google.com/p/macvim-kaoriya/
     $ cd ~/.vim/bundle/vimproc
     $ make -f make_mac.mak
 
-# screen setting
-install vertical split screen
-
-    $ git clone git://git.savannah.gnu.org/screen.git
-    $ cd screen/src
-    $ autoconf
-    $ autoheader
-    $ ./configure
-    $ make
-    $ sudo make install
-
-
-if autoconf not found
-
-    $ brew install automake
-    $ brew link autoconf
+# tmux setting
+    $ $ brew install reattach-to-user-namespace
 
 # bundler-exec setting
+add to zshrc
 
     echo "[ -f ~/.bundler-exec.sh ] && source ~/.bundler-exec.sh" >> ~/.zshrc
