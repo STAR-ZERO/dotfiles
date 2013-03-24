@@ -38,7 +38,7 @@ source $ZSH/oh-my-zsh.sh
 PICT_CHAR=($'\U1F49A ' $'\U1F3B5 ' $'\U1F300 ' $'\U1F47B ' $'\U1F431 ' $'\U1F436 ' $'\U1F604 ' $'\U2728 ' $'\U1F4A3 ' $'\U1F3B8 ')
 
 PROMPT=$'$PICT_CHAR[$[$RANDOM % ${#PICT_CHAR[@]} + 1]] %{$fg_bold[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
-RPROMPT=$'%{$fg_bold[green]%}[%d]%{$reset_color%}'
+#RPROMPT=$'%{$fg_bold[green]%}[%d]%{$reset_color%}'
 
 # alias
 alias exit=" exit" #履歴を辿った時にカーソルが崩れるため
@@ -87,6 +87,8 @@ done
 DISABLE_AUTO_TITLE=true
 # tmuxのvimでcolorscheme対応
 alias tmux="TERM=screen-256color-bce tmux"
+# tmux環境変数
+PROMPT="$PROMPT"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
 
 #editor
 #export EDITOR=/usr/bin/vim
