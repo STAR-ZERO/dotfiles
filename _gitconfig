@@ -24,4 +24,4 @@
     di = diff
     br = branch
 [core]
-    excludesfile = ~/.gitignore_global
+    excludesfile = ~/.gitignore
