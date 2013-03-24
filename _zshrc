@@ -95,6 +95,9 @@ export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
 alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 
+# z.sh
+. `brew --prefix`/etc/profile.d/z.sh
+
 # bundle exec
 [ -f ~/.bundler-exec.sh ] && source ~/.bundler-exec.sh
 
