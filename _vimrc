@@ -33,6 +33,7 @@ NeoBundle 'basyura/unite-rails'
 NeoBundle 'STAR-ZERO/vim-tomorrow-theme'
 NeoBundle 'AnsiEsc.vim'
 NeoBundle 'Lokaltog/vim-powerline'
+NeoBundle 'ack.vim'
 
 filetype plugin indent on
 
