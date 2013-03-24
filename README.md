@@ -44,7 +44,18 @@ select `Ricty for powerline`
 - Regular font: 14pt Monaco
 
 # zsh Setting
-write later
+
+### oh-my-zsh
+
+    $ git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+
+### tmux
+
+    $ brew install tmux
+
+### z.sh
+
+    $ brew isntall z
 
 # Vim Setting
 Vim setting fils
