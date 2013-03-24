@@ -1,6 +1,6 @@
 # Install & Setting
 ###git clone
-    $ git clone git://github.com/mitukiii/dotfiles.git ~/dotfiles
+    $ git clone git@github.com:STAR-ZERO/dotfiles.git ~/dotfiles
 
 ###create symbolic link
 
