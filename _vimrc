@@ -34,6 +34,7 @@ NeoBundle 'STAR-ZERO/vim-tomorrow-theme'
 NeoBundle 'AnsiEsc.vim'
 NeoBundle 'Lokaltog/vim-powerline'
 NeoBundle 'ack.vim'
+NeoBundle 'kana/vim-fakeclip'
 
 filetype plugin indent on
 
@@ -54,7 +55,7 @@ set directory=~/.vim/tmp
 set nobackup
 
 "Vimからクリップボードにもコピー
-set clipboard=unnamed,autoselect
+set clipboard=unnamed
 
 "コマンドラインの高さ
 set cmdheight=1
