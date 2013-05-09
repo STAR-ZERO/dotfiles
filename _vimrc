@@ -132,6 +132,9 @@ nnoremap <silent> ,eg  :<C-u>edit $MYGVIMRC<CR>
 nnoremap <silent> ,rv :<C-u>source $MYVIMRC \| if has('gui_running') \| source $MYGVIMRC \| endif <CR>
 nnoremap <silent> ,rg :<C-u>source $MYGVIMRC<CR>
 
+" :tabmove
+nnoremap <silent> ,tm :tabmove 
+
 ""fugitive
 "git status
 nnoremap <silent> ,gs :Gstatus<CR>
