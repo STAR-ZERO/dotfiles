@@ -13,3 +13,5 @@ fi
 # nvm
 source ~/.nvm/nvm.sh
 
+# gvm
+[[ -s ~/.gvm/bin/gvm-init.sh ]] && source ~/.gvm/bin/gvm-init.sh
