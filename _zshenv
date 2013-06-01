@@ -15,3 +15,8 @@ source ~/.nvm/nvm.sh
 
 # gvm
 [[ -s ~/.gvm/bin/gvm-init.sh ]] && source ~/.gvm/bin/gvm-init.sh
+
+# svm
+export PATH=~/.svm:$PATH
+export SCALA_HOME=~/.svm/current/rt
+export PATH=$SCALA_HOME/bin:$PATH
