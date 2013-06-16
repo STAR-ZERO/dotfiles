@@ -35,6 +35,7 @@ NeoBundle 'AnsiEsc.vim'
 NeoBundle 'Lokaltog/vim-powerline'
 NeoBundle 'ack.vim'
 NeoBundle 'kana/vim-fakeclip'
+NeoBundle 'derekwyatt/vim-scala'
 
 filetype plugin indent on
 
