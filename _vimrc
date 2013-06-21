@@ -11,7 +11,6 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 NeoBundle 'Shougo/vimproc'
-
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/neosnippet.git'
 NeoBundle 'Shougo/unite.vim'
@@ -35,7 +34,9 @@ NeoBundle 'AnsiEsc.vim'
 NeoBundle 'Lokaltog/vim-powerline'
 NeoBundle 'ack.vim'
 NeoBundle 'kana/vim-fakeclip'
+NeoBundle 'estin/htmljinja'
 NeoBundle 'derekwyatt/vim-scala'
+NeoBundle 'Shougo/vimshell.vim'
 
 filetype plugin indent on
 
@@ -100,10 +101,6 @@ set shiftwidth=4
 " 横分割時は下へ､ 縦分割時は右へ新しいウィンドウが開くようにする
 set splitbelow
 set splitright
-
-"HTMLはインデントを無効にする
-autocmd FileType html set indentexpr&
-autocmd FileType xhtml set indentexpr&
 
 " CTRL-hjklでウィンドウ移動
 nnoremap <C-j> <C-w>j
@@ -273,4 +270,7 @@ endfunction
 
 autocmd FileType quickrun AnsiEsc
 autocmd BufReadPost *_spec.rb call RSpecQuickRun()
+
+" tpl
+autocmd BufNewFile,BufRead *.tpl set filetype=htmljinja
 
