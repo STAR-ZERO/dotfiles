@@ -1,4 +1,5 @@
 .DS_Store
 *.swp
-/vimfiles/bundle
+/vim/bundle/*
+!vim/bundle/.gitkeep
 

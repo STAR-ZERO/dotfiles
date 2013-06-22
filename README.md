@@ -84,12 +84,6 @@ $ brew install ack
 Vim setting fils
 Use MacVim http://code.google.com/p/macvim-kaoriya/
 
-### Create NeoBundle directory
-
-```
-$ mkdir ~/.vim/bundle
-```
-
 ### plugin install (Vim command)
 
 ```
