@@ -15,3 +15,8 @@ nnoremap <C-x> :Unite rails/
 " tpl
 autocmd BufNewFile,BufRead *.tpl set filetype=htmljinja
 
+" syntastic
+let g:syntastic_mode_map = { 'mode': 'active',
+  \ 'active_filetypes': [],
+  \ 'passive_filetypes': [] }
+let g:syntastic_javascript_checker = 'jshint'
