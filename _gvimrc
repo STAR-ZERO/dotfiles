@@ -13,14 +13,8 @@ if has('gui_macvim')
     set nobackup
     "ツールバーを非表示
     set guioptions-=T
+    "ビープ音なし
+    set visualbell t_vb=
     "カラースキーム
     colorscheme Tomorrow-Night
-    "コマンドラインの高さ
-    set cmdheight=2
-    "PATH
-    let ZSH_PATH = '/bin/zsh'
-    if executable(ZSH_PATH)
-      let ZSH_ENV_PATH = system(ZSH_PATH . " -c 'source ~/.zshrc; echo $PATH'")
-      let $PATH = ZSH_ENV_PATH
-    endif
 endif

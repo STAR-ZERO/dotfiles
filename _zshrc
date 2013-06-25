@@ -41,47 +41,9 @@ PROMPT=$'$PICT_CHAR[$[$RANDOM % ${#PICT_CHAR[@]} + 1]] %{$fg_bold[cyan]%}%c %{$f
 #RPROMPT=$'%{$fg_bold[green]%}[%d]%{$reset_color%}'
 
 # alias
-alias exit=" exit" #履歴を辿った時にカーソルが崩れるため
 alias cl="clear"
 alias sc="screen"
 alias up="cd ../"
-
-#Homebrew
-export PATH=/usr/local/bin:/usr/local/sbin:$PATH
-
-# Java
-export JAVA_HOME=/Library/Java/Home
-
-#Android
-export ANDROID_HOME=/Applications/android-sdk-macosx
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-
-#AWS
-export AWS_HOME=~/bin/AWS
-export AWS_CREDENTIAL_FILE=$AWS_HOME/credential-file-path
-export EC2_REGION=ap-northeast-1
-
-# AWS EC2
-export AWS_EC2_HOME=~/bin/EC2
-export PATH=$PATH:$AWS_EC2_HOME/bin
-
-# AWS RDS
-export AWS_RDS_HOME=~/bin/RDSCli
-export PATH=$PATH:$AWS_RDS_HOME/bin
-
-# AWS AutoScaling
-export AWS_AUTO_SCALING_HOME=~/bin/AutoScaling
-export PATH=$PATH:$AWS_AUTO_SCALING_HOME/bin
-
-#user bin
-BIN_DIR=~/bin
-export PATH=$PATH:$BIN_DIR
-for BIN_SUB in `ls -F ${BIN_DIR}/ | grep /`
-do
-    BIN_SUB=`echo $BIN_SUB | sed -e "s/\///"`
-    export PATH=$PATH:$BIN_DIR/$BIN_SUB
-done
 
 # tmuxでWidonw名が戻る対応
 DISABLE_AUTO_TITLE=true
@@ -89,13 +51,6 @@ DISABLE_AUTO_TITLE=true
 alias tmux="TERM=screen-256color-bce tmux"
 # tmux環境変数
 PROMPT="$PROMPT"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
-
-#editor
-#export EDITOR=/usr/bin/vim
-
-export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
-alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
-alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 
 # z.sh
 . `brew --prefix`/etc/profile.d/z.sh

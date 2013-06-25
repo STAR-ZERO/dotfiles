@@ -1,3 +1,40 @@
+#Homebrew
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+
+# Java
+export JAVA_HOME=/Library/Java/Home
+
+#Android
+export ANDROID_HOME=/Applications/android-sdk-macosx
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+#AWS
+export AWS_HOME=~/bin/AWS
+export AWS_CREDENTIAL_FILE=$AWS_HOME/credential-file-path
+export EC2_REGION=ap-northeast-1
+
+# AWS EC2
+export AWS_EC2_HOME=~/bin/EC2
+export PATH=$PATH:$AWS_EC2_HOME/bin
+
+# AWS RDS
+export AWS_RDS_HOME=~/bin/RDSCli
+export PATH=$PATH:$AWS_RDS_HOME/bin
+
+# AWS AutoScaling
+export AWS_AUTO_SCALING_HOME=~/bin/AutoScaling
+export PATH=$PATH:$AWS_AUTO_SCALING_HOME/bin
+
+#user bin
+BIN_DIR=~/bin
+export PATH=$PATH:$BIN_DIR
+for BIN_SUB in `ls -F ${BIN_DIR}/ | grep /`
+do
+    BIN_SUB=`echo $BIN_SUB | sed -e "s/\///"`
+    export PATH=$PATH:$BIN_DIR/$BIN_SUB
+done
+
 # rbenv
 if [ -f $HOME/.rbenv/bin/rbenv ]; then
     export PATH=$HOME/.rbenv/bin:$PATH
@@ -20,3 +57,9 @@ source ~/.nvm/nvm.sh
 export PATH=~/.svm:$PATH
 export SCALA_HOME=~/.svm/current/rt
 export PATH=$SCALA_HOME/bin:$PATH
+
+# Editor
+export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
+alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+
