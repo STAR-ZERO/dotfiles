@@ -2,7 +2,7 @@
 set t_Co=256
 colorscheme Tomorrow-Night
 
-set guifont=Ricty\ for\ Powerline:h16
+set guifont=Ricty-RegularForPowerline:h16
 
 set helplang=ja
 
