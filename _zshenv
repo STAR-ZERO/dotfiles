@@ -58,6 +58,9 @@ export PATH=~/.svm:$PATH
 export SCALA_HOME=~/.svm/current/rt
 export PATH=$SCALA_HOME/bin:$PATH
 
+# pvm
+source ~/.pvm/pvm.sh
+
 # Editor
 export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
 alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
