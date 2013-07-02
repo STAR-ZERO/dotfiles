@@ -8,8 +8,9 @@ let g:neocomplcache_enable_smart_case=1
 "補完をキャンセル
 inoremap <expr><C-H> neocomplcache#smart_close_popup()."\<C-H>"
 "補完を表示
-imap <C-K> <Plug>(neocomplcache_snippets_expand)
-smap <C-K> <Plug>(neocomplcache_snippets_expand)
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-k>     <Plug>(neosnippet_expand_target)
 "スニペット編集
 noremap es :<C-U>NeoComplCacheEditSnippets<CR>
 "Enterで補完を確定(endwiseとの関係でおかしくなる対策）

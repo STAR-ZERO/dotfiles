@@ -10,7 +10,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 
 NeoBundle 'Shougo/vimproc'
 NeoBundle 'Shougo/neocomplcache'
-NeoBundle 'Shougo/neosnippet.git'
+NeoBundle 'Shougo/neosnippet'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'BufOnly.vim'
