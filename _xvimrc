@@ -1,0 +1,9 @@
+set pasteboard
+set incsearch
+set ignorecase
+set smartcase
+
+imap <C-j> <Down>
+imap <C-k> <Up>
+imap <C-h> <Left>
+imap <C-l> <Right>
