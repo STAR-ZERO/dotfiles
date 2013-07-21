@@ -6,11 +6,10 @@ let g:neocomplcache_enable_smart_case=1
 "最初の候補を選択する
 "let g:neocomplcache_enable_auto_select=1
 "補完をキャンセル
-inoremap <expr><C-H> neocomplcache#smart_close_popup()."\<C-H>"
+inoremap <expr><BS> neocomplcache#smart_close_popup()."\<BS>"
 "補完を表示
-imap <C-k>     <Plug>(neosnippet_expand_or_jump)
-smap <C-k>     <Plug>(neosnippet_expand_or_jump)
-xmap <C-k>     <Plug>(neosnippet_expand_target)
+imap <C-y>     <Plug>(neosnippet_expand_or_jump)
+smap <C-y>     <Plug>(neosnippet_expand_or_jump)
 "スニペット編集
 noremap es :<C-U>NeoComplCacheEditSnippets<CR>
 "Enterで補完を確定(endwiseとの関係でおかしくなる対策）
@@ -20,4 +19,3 @@ endfunction
 inoremap <silent> <CR> <C-R>=<SID>my_crinsert()<CR>
 "TABで補完を選択
 inoremap <expr><TAB> pumvisible() ? "<C-N>" : "<TAB>"
-

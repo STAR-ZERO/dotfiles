@@ -34,6 +34,7 @@ NeoBundle 'estin/htmljinja'
 NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'Shougo/vimshell.vim'
 NeoBundle 'vim-tags'
+NeoBundle 'tpope/vim-cucumber'
 
 filetype plugin indent on
 

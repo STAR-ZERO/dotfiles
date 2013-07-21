@@ -7,3 +7,7 @@ imap <C-j> <Down>
 imap <C-k> <Up>
 imap <C-h> <Left>
 imap <C-l> <Right>
+
+nmap <C-j> :xccm jumpToNextCounterpart<CR>
+nmap <C-k> :xccm jumpToPreviousCounterpart<CR>
+
