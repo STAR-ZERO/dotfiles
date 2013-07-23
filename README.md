@@ -17,6 +17,7 @@ $ ln -s ~/dotfiles/_tmux.conf ~/.tmux.conf
 $ ln -s ~/dotfiles/_gitconfig ~/.gitconfig
 $ ln -s ~/dotfiles/_gitignore ~/.gitignore
 $ ln -s ~/dotfiles/_xvimrc ~/.xvimrc
+$ ln -s ~/dotfiles/_vrapperrc ~/.vrapperrc
 $ ln -s ~/dotfiles/_ackrc ~/.ackrc
 $ ln -s ~/dotfiles/bundler-exec/bundler-exec.sh ~/.bundler-exec.sh
 ```
