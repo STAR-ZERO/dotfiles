@@ -111,13 +111,6 @@ Use MacVim http://code.google.com/p/macvim-kaoriya/
 :NeoBundleInstall
 ```
 
-### Make vimproc
-
-```
-$ cd ~/.vim/bundle/vimproc
-$ make -f make_mac.mak
-```
-
 #### ctags
 
 ```
