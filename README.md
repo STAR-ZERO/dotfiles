@@ -5,11 +5,20 @@
 $ git clone git@github.com:STAR-ZERO/dotfiles.git ~/dotfiles
 ```
 
+###submodule init,update
+
+```
+$ cd ~/dotfiles
+$ git submodule init
+$ git submodule update
+```
+
 ###create symbolic link
 
 ```
 $ ln -s ~/dotfiles/_zshrc ~/.zshrc
 $ ln -s ~/dotfiles/_zshenv ~/.zshenv
+$ ln -s ~/dotfiles/zsh.d ~/.zsh.d
 $ ln -s ~/dotfiles/_vimrc ~/.vimrc
 $ ln -s ~/dotfiles/_gvimrc ~/.gvimrc
 $ ln -s ~/dotfiles/vim ~/.vim
@@ -20,14 +29,6 @@ $ ln -s ~/dotfiles/_xvimrc ~/.xvimrc
 $ ln -s ~/dotfiles/_vrapperrc ~/.vrapperrc
 $ ln -s ~/dotfiles/_ackrc ~/.ackrc
 $ ln -s ~/dotfiles/bundler-exec/bundler-exec.sh ~/.bundler-exec.sh
-```
-
-###submodule init,update
-
-```
-$ cd ~/dotfiles
-$ git submodule init
-$ git submodule update
 ```
 
 # font patch
