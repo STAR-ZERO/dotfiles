@@ -12,3 +12,4 @@ alias la='ls -lA'
 alias cl="clear"
 alias sc="screen"
 alias up="cd ../"
+alias tmux="TERM=screen-256color-bce tmux"
