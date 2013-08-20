@@ -59,10 +59,28 @@ select `Ricty for powerline`
 
 # zsh Setting
 
-### oh-my-zsh
+### Install
 
 ```
-$ git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+$ brew install --disable-etcdir zsh 
+```
+
+##### set default shell
+
+```
+$ sudo vi /etc/shells
+```
+
+Add the following to the end
+
+```
+/usr/local/bin/zsh
+```
+
+set login shell
+
+```
+$ chpass -s /usr/local/bin/zsh
 ```
 
 ### tmux
@@ -121,9 +139,3 @@ $ cd ~/bin
 $ git clone git@github.com:STAR-ZERO/tmux-powerline.git
 ```
 
-# bundler-exec setting
-add to zshrc
-
-```
-echo "[ -f ~/.bundler-exec.sh ] && source ~/.bundler-exec.sh" >> ~/.zshrc
-```
