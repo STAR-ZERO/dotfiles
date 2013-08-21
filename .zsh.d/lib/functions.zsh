@@ -2,7 +2,7 @@
 . `brew --prefix`/etc/profile.d/z.sh
 
 # bundle exec
-[ -f ~/.bundler-exec.sh ] && source ~/.bundler-exec.sh
+[ -f ~/.bundler-exec/bundler-exec.sh ] && source ~/.bundler-exec/bundler-exec.sh
 
 # tmux自動起動
 if [ -z $TMUX ]; then
@@ -12,22 +12,23 @@ if [ -z $TMUX ]; then
         tmux
     fi
 fi
-# ssh 時に新規ウィンドウを作る
-ssh_tmux() {
-    ssh_cmd="ssh $@"
 
-    # 引数からホスト名を探してそれをウィンドウ名にする
-    for i in $(seq 1 $#);do
-        arg=$argv[$i]
-        if [[ $arg =~ "@" ]] ; then
-            name=${arg##*@}
-        fi
-    done
-    tmux new-window -n "$name" "$ssh_cmd"
-}
-if [[ $TERM =~ ^"screen" ]] ; then
-    alias ssh=ssh_tmux
-fi
+## ssh 時に新規ウィンドウを作る
+#ssh_tmux() {
+#    ssh_cmd="ssh $@"
+#
+#    # 引数からホスト名を探してそれをウィンドウ名にする
+#    for i in $(seq 1 $#);do
+#        arg=$argv[$i]
+#        if [[ $arg =~ "@" ]] ; then
+#            name=${arg##*@}
+#        fi
+#    done
+#    tmux new-window -n "$name" "$ssh_cmd"
+#}
+#if [[ $TERM =~ ^"screen" ]] ; then
+#    alias ssh=ssh_tmux
+#fi
 
 # `cd`で`ls`
 # http://qiita.com/yuyuchu3333/items/b10542db482c3ac8b059
