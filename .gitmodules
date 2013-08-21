@@ -1,9 +1,9 @@
-[submodule "bundler-exec"]
-	path = bundler-exec
+[submodule ".bundler-exec"]
+	path = .bundler-exec
 	url = git@github.com:STAR-ZERO/bundler-exec.git
-[submodule "vim/neobundle.vim"]
-	path = vim/neobundle.vim
-	url = git@github.com:Shougo/neobundle.vim.git
-[submodule "zsh.d/zsh-completions"]
-	path = zsh.d/zsh-completions
+[submodule ".zsh.d/zsh-completions"]
+	path = .zsh.d/zsh-completions
 	url = git@github.com:zsh-users/zsh-completions.git
+[submodule ".vim/neobundle.vim"]
+	path = .vim/neobundle.vim
+	url = git@github.com:Shougo/neobundle.vim.git
