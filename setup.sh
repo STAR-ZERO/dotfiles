@@ -5,5 +5,7 @@ DOT_FILES=(.zshrc .zshenv .zsh.d .vimrc .gvimrc .vim .tmux.conf .gitconfig .giti
 
 for file in ${DOT_FILES[@]}
 do
-    ln -s $DOTFILES_DIR/$file $HOME/$file
+    if [ ! -e $HOME/$file ]; then
+        ln -s $DOTFILES_DIR/$file $HOME/$file
+    fi
 done
