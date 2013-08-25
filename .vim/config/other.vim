@@ -21,5 +21,12 @@ let g:syntastic_mode_map = { 'mode': 'active',
   \ 'passive_filetypes': [] }
 let g:syntastic_javascript_checkers = ['jshint']
 
-" vim-powerline
-let g:Powerline_symbols = 'fancy'
+" vim-airline
+let g:airline_theme='tomorrow'
+let g:airline_left_sep = '⮀'
+let g:airline_left_alt_sep = '⮁'
+let g:airline_right_sep = '⮂'
+let g:airline_right_alt_sep = '⮃'
+let g:airline#extensions#branch#symbol = '⭠'
+let g:airline#extensions#readonly#symbol = '⭤'
+let g:airline_linecolumn_prefix = '⭡'
