@@ -11,3 +11,5 @@ imap <C-l> <Right>
 nmap <C-j> :xccm jumpToNextCounterpart<CR>
 nmap <C-k> :xccm jumpToPreviousCounterpart<CR>
 
+nmap <C-h> :xccm goBackInHistoryByCommand<CR>
+nmap <C-l> :xccm goForwardInHistoryByCommand<CR>
