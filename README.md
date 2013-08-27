@@ -104,7 +104,5 @@ $ brew install reattach-to-user-namespace
 
 ```
 $ brew install https://raw.github.com/Homebrew/homebrew-dupes/master/grep.rb
-$ cd ~/bin
-$ git clone git@github.com:STAR-ZERO/tmux-powerline.git
 ```
 
