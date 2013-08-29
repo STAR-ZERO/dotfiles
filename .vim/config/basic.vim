@@ -34,6 +34,8 @@ set hlsearch
 set ignorecase
 "検索ハイライトをesc2回で解除
 nmap <ESC><ESC> :nohlsearch<CR><ESC>
+"Insertモードを抜けたら日本語入力OFF
+inoremap <silent> <ESC> <ESC>:set iminsert=0<CR>
 
 "タイトルをウィンドウ枠に表示
 set title
