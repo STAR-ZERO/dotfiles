@@ -42,6 +42,7 @@ NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'Shougo/vimshell.vim'
 NeoBundle 'vim-tags'
 NeoBundle 'tpope/vim-cucumber'
+NeoBundle 'editorconfig/editorconfig-vim'
 
 filetype plugin indent on
 
