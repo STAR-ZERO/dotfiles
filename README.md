@@ -106,3 +106,10 @@ $ brew install reattach-to-user-namespace
 $ brew install https://raw.github.com/Homebrew/homebrew-dupes/master/grep.rb
 ```
 
+### CMatrix
+
+tmux Screen saver
+
+```
+$ brew install cmatrix
+```
