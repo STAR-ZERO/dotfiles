@@ -91,3 +91,10 @@ cdup() {
 zle -N cdup
 bindkey '\^' cdup
 
+# tmuxのWindow名変更
+precmd() {
+    if [[ ( ${-} == *i* ) && ( ${TERM} == screen* ) ]]
+    then
+        echo -n "\ek$(hostname -s)\e\\"
+    fi
+}
