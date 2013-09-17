@@ -48,10 +48,10 @@ if [ -f $HOME/.phpenv/bin/phpenv ]; then
 fi
 
 # nvm
-source ~/.nvm/nvm.sh
+[[ -f ~/.nvm/nvm.sh ]] && source ~/.nvm/nvm.sh
 
 # gvm
-[[ -s ~/.gvm/bin/gvm-init.sh ]] && source ~/.gvm/bin/gvm-init.sh
+[[ -f ~/.gvm/bin/gvm-init.sh ]] && source ~/.gvm/bin/gvm-init.sh
 
 # svm
 export PATH=~/.svm:$PATH
@@ -59,7 +59,10 @@ export SCALA_HOME=~/.svm/current/rt
 export PATH=$SCALA_HOME/bin:$PATH
 
 # pvm
-source ~/.pvm/pvm.sh
+[[ -f ~/.gvm/bin/gvm-init.sh ]] && source ~/.pvm/pvm.sh
+
+# mysqlenv
+[[ -f ~/.mysqlenv/etc/bashrc ]] && source ~/.mysqlenv/etc/bashrc
 
 # Editor
 export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
