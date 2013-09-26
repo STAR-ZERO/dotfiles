@@ -5,5 +5,6 @@ source ~/.vim/config/unite.vim
 source ~/.vim/config/nerdtree.vim
 source ~/.vim/config/quickrun.vim
 source ~/.vim/config/ctags.vim
+source ~/.vim/config/tab.vim
 source ~/.vim/config/other.vim
 

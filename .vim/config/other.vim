@@ -27,3 +27,5 @@ let g:airline_right_alt_sep = '⮃'
 let g:airline#extensions#branch#symbol = '⭠'
 let g:airline#extensions#readonly#symbol = '⭤'
 let g:airline_linecolumn_prefix = '⭡'
+
+highlight Normal ctermbg=none
