@@ -1,7 +1,7 @@
-set pasteboard
 set incsearch
 set ignorecase
 set smartcase
+set clipboard=unnamed
 
 imap <C-j> <Down>
 imap <C-k> <Up>
