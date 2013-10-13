@@ -7,3 +7,5 @@ for file in $ZSH/lib/*.zsh; do
 done
 unset file
 
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
