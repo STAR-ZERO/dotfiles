@@ -1,9 +1,6 @@
 # z.sh
 . `brew --prefix`/etc/profile.d/z.sh
 
-# bundle exec
-[ -f ~/.bundler-exec/bundler-exec.sh ] && source ~/.bundler-exec/bundler-exec.sh
-
 # tmux自動起動
 if [ -z $TMUX ]; then
     if $(tmux has-session); then

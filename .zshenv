@@ -64,6 +64,12 @@ export PATH=$SCALA_HOME/bin:$PATH
 # mysqlenv
 [[ -f ~/.mysqlenv/etc/bashrc ]] && source ~/.mysqlenv/etc/bashrc
 
+# Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+# Bundler binstabs
+export PATH=./bundle_bin:$PATH
+
 # Editor
 export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
 alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
