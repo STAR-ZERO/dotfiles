@@ -3,3 +3,4 @@
 /.vim/bundle/*
 !.vim/bundle/.gitkeep
 
+.zsh.d/cache
