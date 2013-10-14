@@ -8,4 +8,4 @@ alias heroku='nocorrect heroku'
 alias ebuild='nocorrect ebuild'
 alias hpodder='nocorrect hpodder'
 alias sudo='nocorrect sudo'
-
+alias guard='nocorrect guard'
