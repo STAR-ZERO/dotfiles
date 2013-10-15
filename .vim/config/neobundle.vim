@@ -43,7 +43,7 @@ NeoBundle 'Shougo/vimshell.vim'
 NeoBundle 'vim-tags'
 NeoBundle 'tpope/vim-cucumber'
 NeoBundle 'editorconfig/editorconfig-vim'
-
-filetype plugin indent on
+NeoBundle 'tpope/vim-haml'
+NeoBundle 'othree/html5.vim'
 
 " NeoBundleCheck
