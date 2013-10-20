@@ -20,7 +20,11 @@ inoremap <silent> <CR> <C-R>=<SID>my_crinsert()<CR>
 "TABで補完を選択
 inoremap <expr><TAB> pumvisible() ? "<C-N>" : "<TAB>"
 
+let g:neocomplcache_enable_underbar_completion = 1
+let g:neocomplcache_min_syntax_length = 3
 let g:neocomplcache_dictionary_filetype_lists = {
     \ 'default' : '',
-    \ 'scala' : $HOME.'.vim/dict/scala.dict'
+    \ 'scala' : $HOME.'/.vim/dict/scala.dict',
+    \ 'ruby' : $HOME.'/.vim/dict/ruby.dict'
     \ }
+
