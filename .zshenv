@@ -61,9 +61,6 @@ export PATH=$SCALA_HOME/bin:$PATH
 # pvm
 [[ -f ~/.gvm/bin/gvm-init.sh ]] && source ~/.pvm/pvm.sh
 
-# mysqlenv
-[[ -f ~/.mysqlenv/etc/bashrc ]] && source ~/.mysqlenv/etc/bashrc
-
 # Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
