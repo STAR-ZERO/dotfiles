@@ -1,6 +1,6 @@
 " closetag.vim
 let g:closetag_html_style=1
-au Filetype html,xml,xsl,ant,eruby source ~/.vim/bundle/closetag.vim/plugin/closetag.vim
+autocmd Filetype html,xml,xsl,ant,eruby.html source ~/.vim/bundle/closetag.vim/plugin/closetag.vim
 
 " vim-rails
 nnoremap <Space>r :R<CR>
