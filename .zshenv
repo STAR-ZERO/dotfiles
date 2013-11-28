@@ -5,7 +5,7 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export JAVA_HOME=/Library/Java/Home
 
 #Android
-export ANDROID_HOME=/Applications/android-sdk-macosx
+export ANDROID_HOME="/Applications/Android Studio.app/sdk"
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
