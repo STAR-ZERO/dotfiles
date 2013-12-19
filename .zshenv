@@ -50,9 +50,6 @@ fi
 # nvm
 [[ -f ~/.nvm/nvm.sh ]] && source ~/.nvm/nvm.sh
 
-# gvm
-[[ -f ~/.gvm/bin/gvm-init.sh ]] && source ~/.gvm/bin/gvm-init.sh
-
 # svm
 export PATH=~/.svm:$PATH
 export SCALA_HOME=~/.svm/current/rt
@@ -71,4 +68,7 @@ export PATH=./bundle_bin:$PATH
 export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
 alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+
+# gvm
+[[ -f ~/.gvm/bin/gvm-init.sh ]] && source ~/.gvm/bin/gvm-init.sh
 
