@@ -59,7 +59,7 @@ export SCALA_HOME=~/.svm/current/rt
 export PATH=$SCALA_HOME/bin:$PATH
 
 # pvm
-[[ -f ~/.gvm/bin/gvm-init.sh ]] && source ~/.pvm/pvm.sh
+[[ -f ~/.pvm/pvm.sh ]] && source ~/.pvm/pvm.sh
 
 # Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
