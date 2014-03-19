@@ -2,7 +2,7 @@
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 # Java
-export JAVA_HOME=/Library/Java/Home
+export JAVA_HOME=`/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/java_home -v "1.8"`
 
 #Android
 export ANDROID_HOME="/Applications/Android Studio.app/sdk"
