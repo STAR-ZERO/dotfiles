@@ -7,3 +7,6 @@
 [submodule ".tmux-powerline"]
 	path = .tmux-powerline
 	url = git@github.com:STAR-ZERO/tmux-powerline.git
+[submodule ".zsh.d/cd-bookmark"]
+	path = .zsh.d/cd-bookmark
+	url = git@github.com:mollifier/cd-bookmark.git
