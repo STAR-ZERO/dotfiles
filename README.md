@@ -7,11 +7,23 @@ $ git submodule update --init
 $ ./setup.sh
 ```
 
+# Homebrew
+
+## Install Homebrew
+
+[Here](http://brew.sh/)
+
+## Install Package
+
+```
+$ cd ~/dotfiles
+$ brew bundle
+```
+
 # font patch
 see [vim-powerline/fontpatcher at develop · Lokaltog/vim-powerline](https://github.com/Lokaltog/vim-powerline/tree/develop/fontpatcher)
 
 ```
-$ brew install fontforge
 $ git clone https://github.com/Lokaltog/vim-powerline.git vim-powerline
 $ fontforge -script ./vim-powerline/fontpatcher/fontpatcher ~/Library/Fonts/Ricty-Regular.ttf
 $ fontforge -script ./vim-powerline/fontpatcher/fontpatcher ~/Library/Fonts/Ricty-Bold.ttf
@@ -35,12 +47,6 @@ select `Ricty for powerline`
 
 # zsh Setting
 
-### Install
-
-```
-$ brew install --disable-etcdir zsh 
-```
-
 ##### set default shell
 
 ```
@@ -59,24 +65,6 @@ set login shell
 $ chpass -s /usr/local/bin/zsh
 ```
 
-### tmux
-
-```
-$ brew install tmux
-```
-
-### z.sh
-
-```
-$ brew isntall z
-```
-
-### ack
-
-```
-$ brew install ack
-```
-
 # Vim Setting
 Vim setting fils
 Use MacVim http://code.google.com/p/macvim-kaoriya/
@@ -85,24 +73,5 @@ Use MacVim http://code.google.com/p/macvim-kaoriya/
 
 ```
 :NeoBundleInstall
-```
-
-#### ctags
-
-```
-$ brew install ctags
-```
-
-# tmux setting
-### clipboard
-
-```
-$ brew install reattach-to-user-namespace
-```
-
-### tmux-powerline
-
-```
-$ brew install https://raw.github.com/Homebrew/homebrew-dupes/master/grep.rb
 ```
 
