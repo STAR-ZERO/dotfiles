@@ -22,6 +22,9 @@ set clipboard=unnamed
 "コマンドラインの高さ
 set cmdheight=1
 
+"unodofileを作らない
+set noundofile
+
 "行番号
 set number
 
