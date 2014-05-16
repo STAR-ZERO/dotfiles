@@ -1,8 +1,8 @@
-if exists("b:did_ftplugin_scss")
+if exists("b:did_ftplugin_coffee")
   finish
 endif
 
-let b:did_ftplugin_scss=1
+let b:did_ftplugin_coffee=1
 
 setlocal expandtab
 setlocal tabstop=2
