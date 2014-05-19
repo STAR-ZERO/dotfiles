@@ -16,6 +16,9 @@ set directory=~/.vim/tmp
 "バックアップファイルを作成しない
 set nobackup
 
+" crontab編集のため
+set backupskip=/tmp/*,/private/tmp/*
+
 "Vimからクリップボードにもコピー
 set clipboard=unnamed
 
