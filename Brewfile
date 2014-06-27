@@ -22,6 +22,9 @@ install wget
 install tree
 install tig
 
+tap peco/peco
+install peco
+
 # for tmux
 install reattach-to-user-namespace
 install https://raw.github.com/Homebrew/homebrew-dupes/master/grep.rb
