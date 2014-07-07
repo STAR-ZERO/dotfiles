@@ -96,7 +96,7 @@ precmd() {
     fi
 }
 
-
+# pecoで履歴(ctrl-r）
 peco-select-history() {
     typeset tac
     if which tac > /dev/null; then
@@ -110,4 +110,13 @@ peco-select-history() {
 }
 zle -N peco-select-history
 bindkey '^r' peco-select-history
+
+# pecoでcdb実行
+# require https://github.com/mollifier/cd-bookmark
+peco-select-bookmark() {
+    cd $(cdb | peco | awk -F"|" '{ print $2 }')
+}
+cdp() {
+    peco-select-bookmark
+}
 
