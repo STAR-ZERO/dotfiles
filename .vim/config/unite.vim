@@ -4,8 +4,11 @@ let g:unite_enable_start_insert=1
 let g:unite_split_rule="botright"
 "ウィンドウ分割の高さ
 let g:unite_winheight=15
+
+let g:unite_source_history_yank_enable = 1
+noremap <C-Y> :Unite history/yank<CR>
 "バッファ一覧
-noremap <C-Y> :Unite buffer<CR>
+"noremap <C-Y> :Unite buffer<CR>
 "ファイル一覧
 noremap <C-N> :Unite -buffer-name=file file file/new<CR>
 "レジスタ一覧
@@ -29,11 +32,27 @@ au FileType unite inoremap <silent> <buffer> <expr> <C-C> unite#do_action('cd')
 "rec
 au FileType unite nnoremap <silent> <buffer> <expr> <C-R> unite#do_action('rec')
 au FileType unite inoremap <silent> <buffer> <expr> <C-R> unite#do_action('rec')
+"yank
+"yank後に閉じるための設定
+let yank_and_exit = {
+    \ 'is_selectable' : 1,
+    \ 'is_quit': 1,
+    \ }
+function! yank_and_exit.func(candidates)
+    call unite#take_action('yank', a:candidates)
+endfunction
+call unite#custom#action('common', 'yank_and_exit', yank_and_exit)
+unlet yank_and_exit
+au FileType unite nnoremap <silent> <buffer> <expr> <C-Y> unite#do_action('yank_and_exit')
+au FileType unite inoremap <silent> <buffer> <expr> <C-Y> unite#do_action('yank_and_exit')
+
 "Unite上でのキーマッピング
 function! s:unite_my_settings()
     "ESCキー2回で終了
-    nmap <silent><buffer> <ESC><ESC> q
-    imap <silent><buffer> <ESC><ESC> <ESC>q
+    nmap <silent><buffer> <ESC><ESC> <Plug>(unite_exit)
+    imap <silent><buffer> <ESC><ESC> <Plug>(unite_exit)
 endfunction
 autocmd FileType unite call s:unite_my_settings()
+
+call unite#custom#profile('default', 'context', { 'prompt_direction': 'top'})
 
