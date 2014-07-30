@@ -21,6 +21,7 @@ install fontforge
 install wget
 install tree
 install tig
+install terminal-notifier
 
 tap peco/peco
 install peco
