@@ -5,6 +5,7 @@ source ~/.vim/config/unite.vim
 source ~/.vim/config/nerdtree.vim
 source ~/.vim/config/quickrun.vim
 source ~/.vim/config/ctags.vim
+source ~/.vim/config/caw.vim
 source ~/.vim/config/other.vim
 
 filetype plugin indent on
