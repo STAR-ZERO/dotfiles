@@ -22,6 +22,7 @@ install wget
 install tree
 install tig
 install terminal-notifier
+install cheat
 
 tap peco/peco
 install peco
