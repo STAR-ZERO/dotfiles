@@ -66,25 +66,21 @@ export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
 alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 
-# gvm
-[[ -f ~/.gvm/bin/gvm-init.sh ]] && source ~/.gvm/bin/gvm-init.sh
-
-# direnv
-eval "$(direnv hook zsh)"
-
+# cocos2d-x
 # Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
 export COCOS_CONSOLE_ROOT=/Applications/cocos2d-x-3.2/tools/cocos2d-console/bin
 export PATH=$COCOS_CONSOLE_ROOT:$PATH
-
 # Add environment variable NDK_ROOT for cocos2d-x
 export NDK_ROOT=/Applications/android-ndk-r10
 export PATH=$NDK_ROOT:$PATH
-
 # Add environment variable ANDROID_SDK_ROOT for cocos2d-x
 export ANDROID_SDK_ROOT=$ANDROID_HOME
 export PATH=$ANDROID_SDK_ROOT:$PATH
 export PATH=$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools:$PATH
-
 # Add environment variable ANT_ROOT for cocos2d-x
 export ANT_ROOT=/usr/local/bin
 export PATH=$ANT_ROOT:$PATH
+
+# direnv
+eval "$(direnv hook zsh)"
+
