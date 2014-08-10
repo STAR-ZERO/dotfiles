@@ -17,8 +17,11 @@ if neobundle#is_installed('neocomplete')
     let g:neocomplete#min_keyword_length = 3
     let g:neocomplete#sources#dictionary#dictionaries = {
         \ 'default' : '',
+        \ 'javascript' : $HOME.'/.vim/dict/javascript.dict',
         \ 'scala' : $HOME.'/.vim/dict/scala.dict',
-        \ 'ruby' : $HOME.'/.vim/dict/ruby.dict'
+        \ 'ruby' : $HOME.'/.vim/dict/ruby.dict',
+        \ 'c' : $HOME.'/.vim/dict/c.dict',
+        \ 'cpp' : $HOME.'/.vim/dict/cpp.dict'
         \ }
 elseif neobundle#is_installed('neocomplcache')
     let g:neocomplcache_enable_at_startup=1
@@ -42,7 +45,10 @@ elseif neobundle#is_installed('neocomplcache')
     let g:neocomplcache_min_syntax_length = 3
     let g:neocomplcache_dictionary_filetype_lists = {
         \ 'default' : '',
+        \ 'javascript' : $HOME.'/.vim/dict/javascript.dict',
         \ 'scala' : $HOME.'/.vim/dict/scala.dict',
-        \ 'ruby' : $HOME.'/.vim/dict/ruby.dict'
+        \ 'ruby' : $HOME.'/.vim/dict/ruby.dict',
+        \ 'c' : $HOME.'/.vim/dict/c.dict',
+        \ 'cpp' : $HOME.'/.vim/dict/cpp.dict'
         \ }
 endif
