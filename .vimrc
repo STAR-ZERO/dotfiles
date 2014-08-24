@@ -4,6 +4,7 @@ source ~/.vim/config/neocomplete.vim
 source ~/.vim/config/neosnippet.vim
 source ~/.vim/config/unite.vim
 source ~/.vim/config/nerdtree.vim
+source ~/.vim/config/syntastic.vim
 source ~/.vim/config/quickrun.vim
 source ~/.vim/config/ctags.vim
 source ~/.vim/config/caw.vim

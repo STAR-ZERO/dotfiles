@@ -5,7 +5,9 @@ let g:quickrun_config = {}
 let g:quickrun_config['_'] = {}
 let g:quickrun_config['_']['runner'] = 'vimproc'
 let g:quickrun_config['_']['runner/vimproc/updatetime'] = 100
-let g:quickrun_config['*'] = {'split' : 'belowright 8sp', 'running_mark' : 'Running...'}
+let g:quickrun_config['_']['hook/time/enable'] = 1
+let g:quickrun_config['_']['split'] = 'belowright 8sp'
+let g:quickrun_config['_']['running_mark'] = 'Running...'
 
 " RSpec
 let g:quickrun_config['rspec/bundle'] = {}
@@ -35,6 +37,18 @@ function! RSpecQuickRun()
     endif
 endfunction
 
-autocmd FileType quickrun AnsiEsc
 autocmd BufReadPost *_spec.rb call RSpecQuickRun()
 
+" C++11
+if executable("clang++")
+    let g:quickrun_config['cpp/clang++11'] = {}
+    let g:quickrun_config['cpp/clang++11']['type'] = 'cpp/clang++11'
+    let g:quickrun_config['cpp/clang++11']['command'] = 'clang++'
+    let g:quickrun_config['cpp/clang++11']['cmdopt'] = '--std=c++11 --stdlib=libc++'
+    let g:quickrun_config['cpp/clang++11']['exec'] = ['%c %o %s -o %s:p:r', '%s:p:r %a']
+    let g:quickrun_config['cpp/clang++11']['tempfile'] = '%{tempname()}.cpp'
+    let g:quickrun_config['cpp/clang++11']['hook/sweep/files'] = ['%S:p:r']
+    let g:quickrun_config['cpp'] = {'type': 'cpp/clang++11'}
+endif
+
+autocmd FileType quickrun AnsiEsc

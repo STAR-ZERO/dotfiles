@@ -12,12 +12,6 @@ nnoremap <Space>rs :Rspec<Space>
 " unite-rails
 nnoremap <C-x> :Unite rails/
 
-" syntastic
-let g:syntastic_mode_map = { 'mode': 'active',
-  \ 'active_filetypes': [],
-  \ 'passive_filetypes': [] }
-let g:syntastic_javascript_checkers = ['jshint']
-
 " vim-airline
 let g:airline_theme='tomorrow'
 let g:airline_left_sep = '⮀'
