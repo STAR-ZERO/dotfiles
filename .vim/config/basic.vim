@@ -48,6 +48,10 @@ inoremap <silent> <ESC> <ESC>:set iminsert=0<CR>
 "削除でレジスタに格納しない
 nnoremap x "_x
 
+" ビープ音を鳴らさない
+set visualbell t_vb=
+set noerrorbells
+
 "タイトルをウィンドウ枠に表示
 set title
 

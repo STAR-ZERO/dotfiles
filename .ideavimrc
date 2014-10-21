@@ -15,6 +15,10 @@ set clipboard=unnamed
 "削除でレジスタに格納しない
 nnoremap x "_x
 
+" ビープ音を鳴らさない
+set visualbell t_vb=
+set noerrorbells
+
 " 検索結果を中心へ
 nnoremap n nzz
 nnoremap N Nzz
