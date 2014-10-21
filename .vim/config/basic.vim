@@ -38,10 +38,15 @@ set cursorline
 set hlsearch
 "検索時に大文字小文字をを区別しない
 set ignorecase
+"検索で大文字があるときは区別
+set smartcase
 "検索ハイライトをesc2回で解除
 nmap <ESC><ESC> :nohlsearch<CR><ESC>
 "Insertモードを抜けたら日本語入力OFF
 inoremap <silent> <ESC> <ESC>:set iminsert=0<CR>
+
+"削除でレジスタに格納しない
+nnoremap x "_x
 
 "タイトルをウィンドウ枠に表示
 set title

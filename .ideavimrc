@@ -1,0 +1,30 @@
+" 検索結果をハイライト
+set hlsearch
+" 検索時に大文字小文字をを区別しない
+set ignorecase
+"検索で大文字があるときは区別
+set smartcase
+"検索ハイライトをesc2回で解除
+nmap <ESC><ESC> :nohlsearch<CR><ESC>
+"Insertモードを抜けたら日本語入力OFF
+inoremap <silent> <ESC> <ESC>:set iminsert=0<CR>
+
+"Vimからクリップボードにもコピー
+set clipboard=unnamed
+
+"削除でレジスタに格納しない
+nnoremap x "_x
+
+" 検索結果を中心へ
+nnoremap n nzz
+nnoremap N Nzz
+nnoremap * *zz
+nnoremap # #zz
+nnoremap g* g*zz
+nnoremap g# g#zz
+
+" 挿入モードでのカーソル移動
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
+inoremap <C-h> <Left>
+inoremap <C-l> <Right>
