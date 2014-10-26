@@ -5,7 +5,8 @@ setopt prompt_subst
 
 # PROMPT
 PICT_CHAR=($'\U1F49A ' $'\U1F3B5 ' $'\U1F300 ' $'\U1F47B ' $'\U1F431 ' $'\U1F436 ' $'\U1F604 ' $'\U2728 ' $'\U1F4A3 ' $'\U1F3B8 ')
-PROMPT=$'$PICT_CHAR[$[$RANDOM % ${#PICT_CHAR[@]} + 1]] %{$fg_bold[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
+PROMPT=$'╭─ $PICT_CHAR[$[$RANDOM % ${#PICT_CHAR[@]} + 1]] [%{$fg_bold[cyan]%}%~%{$reset_color%}]
+╰ ➤ %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} %{$reset_color%} '
 
 # lsの色
 export LSCOLORS="Gxfxcxdxbxegedabagacad"
