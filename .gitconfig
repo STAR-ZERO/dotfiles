@@ -3,18 +3,6 @@
     email = kenji.01.star@gmail.com
 [color]
     ui = true
-[merge]
-    keepBackup = false
-    tool = p4merge
-[mergetool]
-    keepBackup = false
-[mergetool "p4merge"]
-    cmd = p4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
-    keepTemporaries = false
-    trustExitCode = false
-    keepBackup = false
-[diff]
-    external = p4diff
 [push]
     default = upstream
 [alias]
@@ -25,3 +13,11 @@
     br = branch
 [core]
     excludesfile = ~/.gitignore_global
+[merge]
+    keepBackup = false
+    tool = extMerge
+[mergetool "extMerge"]
+    cmd = extMerge \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+    trustExitCode = false
+[diff]
+    external = extDiff
