@@ -13,11 +13,15 @@ $ ./setup.sh
 
 [Here](http://brew.sh/)
 
+## Install XQuartz
+
+[Here](http://xquartz.macosforge.org/landing/)
+
 ## Install Package
 
 ```
 $ cd ~/dotfiles
-$ brew bundle
+$ brew/setup.sh
 ```
 
 # font patch
@@ -43,7 +47,7 @@ Preferences… > Profiles > Text > Change font
 select `Ricty for powerline`
 
 - Regular font: 16pt Ricty Regular for Powerline
-- Regular font: 14pt Monaco
+- Non-ASCII font: 14pt Monaco
 
 # zsh Setting
 
@@ -66,8 +70,8 @@ $ chpass -s /usr/local/bin/zsh
 ```
 
 # Vim Setting
-Vim setting fils
-Use MacVim http://code.google.com/p/macvim-kaoriya/
+
+Use [MacVim](https://github.com/splhack/macvim/releases)
 
 ### plugin install (Vim command)
 
