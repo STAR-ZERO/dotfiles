@@ -19,6 +19,8 @@ tig
 terminal-notifier
 cheat
 peco
+ghc
+cabal-install
 
 reattach-to-user-namespace
 https://raw.github.com/Homebrew/homebrew-dupes/master/grep.rb
