@@ -114,9 +114,12 @@ bindkey '^r' peco-select-history
 # pecoでcdb実行
 # require https://github.com/mollifier/cd-bookmark
 peco-select-bookmark() {
-    cd $(cdb | peco | awk -F"|" '{ print $2 }')
+    local selected_dir=$(cdb | peco | awk -F"|" '{ print $2 }')
+    if [ -n "$selected_dir" ]; then
+        cd `eval echo $selected_dir`
+    fi
 }
-cdp() {
+cdbp() {
     peco-select-bookmark
 }
 
