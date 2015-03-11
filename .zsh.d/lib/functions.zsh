@@ -133,3 +133,15 @@ function peco-select-cdr() {
 function cdrp() {
     peco-select-cdr
 }
+# pecoでcdr実行（キーバインド）
+function peco-select-cdr-bind() {
+    local selected_dir=$(cdr -l | peco | awk '{ print $2 }')
+    if [ -n "$selected_dir" ]; then
+        BUFFER="cd ${selected_dir}"
+        zle accept-line
+    fi
+    zle clear-screen
+}
+zle -N peco-select-cdr-bind
+bindkey '^@' peco-select-cdr-bind
+
