@@ -120,3 +120,13 @@ cdp() {
     peco-select-bookmark
 }
 
+# pecoでcdr実行
+peco-select-cdr() {
+    local selected_dir=$(cdr -l | peco | awk '{ print $2 }')
+    if [ -n "$selected_dir" ]; then
+        cd `eval echo $selected_dir`
+    fi
+}
+cdrp() {
+    peco-select-cdr
+}
