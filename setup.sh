@@ -9,3 +9,6 @@ do
         ln -s $DOTFILES_DIR/$file $HOME/$file
     fi
 done
+
+# for cdr command
+mkdir -p $HOME/.cache/shell/
