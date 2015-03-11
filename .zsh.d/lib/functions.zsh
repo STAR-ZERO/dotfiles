@@ -29,10 +29,10 @@ fi
 
 # `cd`で`ls`
 # http://qiita.com/yuyuchu3333/items/b10542db482c3ac8b059
-chpwd() {
+function chpwd() {
     ls_abbrev
 }
-ls_abbrev() {
+fucntion ls_abbrev() {
    # -a : Do not ignore entries starting with ..
     # -C : Force multi-column output.
     # -F : Append indicator (one of */=>@|) to entries.
@@ -69,7 +69,7 @@ ls_abbrev() {
 }
 
 # ^で`cd ..`
-cdup() {
+function cdup() {
     if [ -z "$BUFFER" ]; then
         echo
         cd ..
@@ -89,7 +89,7 @@ zle -N cdup
 bindkey '\^' cdup
 
 # tmuxのWindow名変更
-precmd() {
+function precmd() {
     if [[ ( ${-} == *i* ) && ( ${TERM} == screen* ) ]]
     then
         echo -n "\ek$(hostname -s)\e\\"
@@ -97,7 +97,7 @@ precmd() {
 }
 
 # pecoで履歴(ctrl-r）
-peco-select-history() {
+function peco-select-history() {
     typeset tac
     if which tac > /dev/null; then
         tac=tac
@@ -113,23 +113,23 @@ bindkey '^r' peco-select-history
 
 # pecoでcdb実行
 # require https://github.com/mollifier/cd-bookmark
-peco-select-bookmark() {
+function peco-select-bookmark() {
     local selected_dir=$(cdb | peco | awk -F"|" '{ print $2 }')
     if [ -n "$selected_dir" ]; then
         cd `eval echo $selected_dir`
     fi
 }
-cdbp() {
+function cdbp() {
     peco-select-bookmark
 }
 
 # pecoでcdr実行
-peco-select-cdr() {
+function peco-select-cdr() {
     local selected_dir=$(cdr -l | peco | awk '{ print $2 }')
     if [ -n "$selected_dir" ]; then
         cd `eval echo $selected_dir`
     fi
 }
-cdrp() {
+function cdrp() {
     peco-select-cdr
 }
