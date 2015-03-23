@@ -38,6 +38,16 @@ $ fontforge -script ./vim-powerline/fontpatcher/fontpatcher ~/Library/Fonts/Rict
 Double-click to install
 
 # iTerm2 Setting
+
+## Load Preferences
+
+ Preferences… > General > Preferences >
+ 
+ Check `Load preference from a custom folder or URL` and select directory `~/Dropbox/Config/iTerm2`
+
+
+## Manual Setting
+
 ### 256color
 Preferences… > Profiles > Terminal > Report Terminal Type  
 select `xterm-256color`
