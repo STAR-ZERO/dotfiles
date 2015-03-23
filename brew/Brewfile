@@ -23,6 +23,9 @@ ghc
 cabal-install
 redis
 
+rbenv
+ruby-build
+
 reattach-to-user-namespace
 https://raw.github.com/Homebrew/homebrew-dupes/master/grep.rb
 
