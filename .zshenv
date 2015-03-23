@@ -36,7 +36,7 @@ do
 done
 
 # rbenv
-if [ -f $HOME/.rbenv/bin/rbenv ]; then
+if which rbenv > /dev/null; then
     export PATH=$HOME/.rbenv/bin:${HOME}/.rbenv/shims:$PATH
     eval "$(rbenv init -)"
 fi
