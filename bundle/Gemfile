@@ -1,0 +1,10 @@
+source "https://rubygems.org"
+
+# Xcode
+gem 'cocoapods'
+gem 'xcpretty'
+
+# DeployGate
+gem 'dgate'
+
+

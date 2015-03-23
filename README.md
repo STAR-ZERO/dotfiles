@@ -89,3 +89,24 @@ Use [MacVim](https://github.com/splhack/macvim/releases)
 :NeoBundleInstall
 ```
 
+# Ruby tools
+
+### rbenv
+
+```
+$ rbenv install xxxx
+$ rbenv global xxxx
+```
+
+### Install Bunlder
+
+```
+$ gem isntall bundler
+```
+
+### bunle install
+
+```
+$ cd dotfiles/bunle
+$ bundle install
+```
