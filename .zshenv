@@ -68,7 +68,7 @@ alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"
 
 # cocos2d-x
 # Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
-export COCOS_CONSOLE_ROOT=/Applications/cocos2d-x-3.2/tools/cocos2d-console/bin
+export COCOS_CONSOLE_ROOT=/Applications/cocos2d-x-3.4/tools/cocos2d-console/bin
 export PATH=$COCOS_CONSOLE_ROOT:$PATH
 # Add environment variable NDK_ROOT for cocos2d-x
 export NDK_ROOT=/Applications/android-ndk-r9d
