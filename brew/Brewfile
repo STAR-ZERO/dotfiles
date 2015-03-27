@@ -22,6 +22,7 @@ peco
 ghc
 cabal-install
 redis
+node
 
 rbenv
 ruby-build
