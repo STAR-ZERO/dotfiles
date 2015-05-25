@@ -65,6 +65,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
 alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+alias mvim='/Applications/MacVim.app/Contents/MacOS/mvim'
 
 # cocos2d-x
 # Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
