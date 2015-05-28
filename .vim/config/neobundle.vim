@@ -47,6 +47,8 @@ NeoBundle 'editorconfig/editorconfig-vim'
 NeoBundle 'tpope/vim-haml'
 NeoBundle 'othree/html5.vim'
 NeoBundle 'tyru/caw.vim'
+NeoBundle 'plasticboy/vim-markdown'
+NeoBundle 'kannokanno/previm'
 
 call neobundle#end()
 
