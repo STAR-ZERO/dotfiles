@@ -24,6 +24,9 @@ if which rbenv > /dev/null; then
     eval "$(rbenv init -)"
 fi
 
+# Go
+export GOPATH=$HOME/go
+
 # Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 

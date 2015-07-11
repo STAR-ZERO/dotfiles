@@ -49,6 +49,7 @@ NeoBundle 'othree/html5.vim'
 NeoBundle 'tyru/caw.vim'
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'kannokanno/previm'
+NeoBundle 'fatih/vim-go'
 
 call neobundle#end()
 
