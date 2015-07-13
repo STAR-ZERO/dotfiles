@@ -2,6 +2,13 @@
 let g:closetag_html_style=1
 autocmd Filetype html,xml,xsl,ant,eruby.html source ~/.vim/bundle/closetag.vim/plugin/closetag.vim
 
+" Go
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+
 " previm
 let g:previm_open_cmd = 'open -a Google\ Chrome'
 
@@ -26,3 +33,4 @@ let g:airline#extensions#readonly#symbol = '⭤'
 let g:airline_linecolumn_prefix = '⭡'
 
 highlight Normal ctermbg=none
+
