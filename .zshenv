@@ -26,6 +26,7 @@ fi
 
 # Go
 export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
 
 # Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
