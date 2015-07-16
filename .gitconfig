@@ -13,6 +13,7 @@
     br = branch
 [core]
     excludesfile = ~/.gitignore_global
+	ignorecase = false
 [merge]
     keepBackup = false
     tool = extMerge
