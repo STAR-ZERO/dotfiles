@@ -24,13 +24,12 @@ let g:quickrun_config['rspec/normal']['exec'] = '%c %o --color --tty %s'
 
 let g:quickrun_config['rspec/bin'] = {}
 let g:quickrun_config['rspec/bin']['type'] = 'rspec/bin'
-let g:quickrun_config['rspec/bin']['command'] = 'bin/rspec'
+let g:quickrun_config['rspec/bin']['command'] = getcwd() . '/bin/rspec'
 let g:quickrun_config['rspec/bin']['outputter'] = 'buffer'
 let g:quickrun_config['rspec/bin']['exec'] = '%c %o --color --tty %s'
 
 function! RSpecQuickRun()
-    echo getcwd()
-    if executable(getcwd() . "/bin/rspec")
+    if executable(getcwd() . '/bin/rspec')
         let b:quickrun_config = {'type': 'rspec/bin'}
     else
         let b:quickrun_config = {'type': 'rspec/bundle'}
