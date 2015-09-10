@@ -50,6 +50,7 @@ NeoBundle 'tyru/caw.vim'
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'kannokanno/previm'
 NeoBundle 'fatih/vim-go'
+NeoBundle 'stephpy/vim-yaml'
 
 call neobundle#end()
 
