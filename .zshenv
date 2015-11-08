@@ -24,9 +24,8 @@ if which rbenv > /dev/null; then
     eval "$(rbenv init -)"
 fi
 
-# Go
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
+# GVM(go version manager)
+[[ -s "${HOME}/.gvm/scripts/gvm" ]] && source "${HOME}/.gvm/scripts/gvm"
 
 # Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
