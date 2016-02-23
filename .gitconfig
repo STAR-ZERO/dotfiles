@@ -10,7 +10,9 @@
     st = status
     ci = commit
     di = diff
+    d = diff --no-ext-diff
     br = branch
+    g = log --graph --pretty=format:'%C(yellow)%h%Creset %C(auto)%d%C(reset) %s %C(magenta)(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
 [core]
     excludesfile = ~/.gitignore_global
 	ignorecase = false
