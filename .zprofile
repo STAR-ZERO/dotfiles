@@ -8,7 +8,7 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export EDITOR='vim'
 
 # Java
-export JAVA_HOME=`/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/java_home -v "1.7"`
+export JAVA_HOME=`/usr/libexec/java_home -v "1.7"`
 
 #Android
 export ANDROID_HOME="$HOME/Library/Android/sdk"
