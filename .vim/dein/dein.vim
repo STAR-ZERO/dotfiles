@@ -16,7 +16,7 @@ let &runtimepath = s:dein_repo_dir .",". &runtimepath
 if dein#load_state(s:dein_dir)
   let s:toml_file = '~/.vim/dein/dein.toml'
 
-  call dein#begin(s:dein_dir)
+  call dein#begin(s:dein_dir, [s:toml_file])
   call dein#load_toml(s:toml_file)
   call dein#end()
   call dein#save_state()
