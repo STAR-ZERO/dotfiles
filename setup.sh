@@ -10,5 +10,11 @@ do
     fi
 done
 
+# neovim
+# need path "export XDG_CONFIG_HOME=~/.config"
+mkdir -p ~/.config
+ln -s ~/.vim ~/.config/nvim
+ln -s ~/.vimrc ~/.config/nvim/init.vim
+
 # for cdr command
 mkdir -p $HOME/.cache/shell/
