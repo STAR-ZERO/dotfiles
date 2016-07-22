@@ -3,3 +3,6 @@ repo = 'Shougo/dein.vim'
 
 [[plugins]]
 repo = 'scrooloose/nerdtree'
+
+[[plugins]]
+repo = 'chriskempson/vim-tomorrow-theme'
