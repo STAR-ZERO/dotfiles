@@ -30,3 +30,5 @@ ruby-build
 reattach-to-user-namespace
 https://raw.github.com/Homebrew/homebrew-dupes/master/grep.rb
 
+lua
+vim --with-lua
