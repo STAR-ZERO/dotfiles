@@ -36,6 +36,10 @@ set smartcase
 set tabstop=4
 "タブをスペースに置き換える
 set expandtab
+"オートインデント
+set autoindent
+"オートインデントの文字数
+set shiftwidth=4
 
 "タブ・改行を表示
 set list
