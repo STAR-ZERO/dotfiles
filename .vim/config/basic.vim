@@ -57,3 +57,6 @@ set showcmd
 set splitbelow
 set splitright
 
+"インサートモードでもdeleteキーを有効にする
+set backspace=indent,eol,start
+
