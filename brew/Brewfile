@@ -23,6 +23,7 @@ ghc
 cabal-install
 redis
 node
+gnu-sed
 
 rbenv
 ruby-build
