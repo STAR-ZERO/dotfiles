@@ -6,3 +6,9 @@ repo = 'scrooloose/nerdtree'
 
 [[plugins]]
 repo = 'chriskempson/vim-tomorrow-theme'
+
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+
+[[plugins]]
+repo = 'itchyny/lightline.vim'
