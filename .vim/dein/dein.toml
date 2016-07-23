@@ -8,6 +8,10 @@ repo = 'Shougo/unite.vim'
 repo = 'Shougo/neocomplete.vim'
 
 [[plugins]]
+repo = 'Shougo/vimproc.vim'
+build = 'make'
+
+[[plugins]]
 repo = 'scrooloose/nerdtree'
 
 [[plugins]]
@@ -21,3 +25,10 @@ repo = 'airblade/vim-gitgutter'
 
 [[plugins]]
 repo = 'itchyny/lightline.vim'
+
+[[plugins]]
+repo = 'thinca/vim-quickrun'
+
+[[plugins]]
+repo = 'vim-scripts/AnsiEsc.vim'
+
