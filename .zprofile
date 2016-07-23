@@ -1,6 +1,9 @@
 #Homebrew
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
+# Editor
+export EDITOR='vim'
+
 # Java
 export JAVA_HOME=`/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/java_home -v "1.7"`
 
