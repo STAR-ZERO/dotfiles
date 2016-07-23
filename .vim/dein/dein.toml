@@ -11,4 +11,7 @@ repo = 'chriskempson/vim-tomorrow-theme'
 repo = 'tpope/vim-fugitive'
 
 [[plugins]]
+repo = 'airblade/vim-gitgutter'
+
+[[plugins]]
 repo = 'itchyny/lightline.vim'
