@@ -24,27 +24,13 @@ $ cd ~/dotfiles
 $ brew/setup.sh
 ```
 
-# font patch
-see [vim-powerline/fontpatcher at develop · Lokaltog/vim-powerline](https://github.com/Lokaltog/vim-powerline/tree/develop/fontpatcher)
+# Install font
 
-```
-$ git clone https://github.com/Lokaltog/vim-powerline.git vim-powerline
-$ fontforge -script ./vim-powerline/fontpatcher/fontpatcher ~/Library/Fonts/Ricty-Regular.ttf
-$ fontforge -script ./vim-powerline/fontpatcher/fontpatcher ~/Library/Fonts/Ricty-Bold.ttf
-```
+[プログラミングフォント Myrica \| プログラミングフォント Myrica / Estable](http://myrica.estable.jp/)
 
-`Ricty-Regular-Powerline.ttf`, `Ricty-Bold-Powerline.ttf` created in current directory
-
-Double-click to install
+Download and Install `Myrica.ttc`
 
 # iTerm2 Setting
-
-## Load Preferences
-
- Preferences… > General > Preferences >
- 
- Check `Load preference from a custom folder or URL` and select directory `~/Dropbox/Config/iTerm2`
-
 
 ## Manual Setting
 
@@ -53,11 +39,13 @@ Preferences… > Profiles > Terminal > Report Terminal Type
 select `xterm-256color`
 
 ### font
-Preferences… > Profiles > Text > Change font  
-select `Ricty for powerline`
 
-- Regular font: 16pt Ricty Regular for Powerline
-- Non-ASCII font: 14pt Monaco
+Preferences… > Profiles > Text > Font > Change font  
+select `Myrica M:16pt`
+
+Preferences… > Profiles > Text > Non-ASCII Font > Change font  
+select `Monaco:14pt`
+
 
 # zsh Setting
 
@@ -79,16 +67,6 @@ set login shell
 $ chpass -s /usr/local/bin/zsh
 ```
 
-# Vim Setting
-
-Use [MacVim](https://github.com/splhack/macvim/releases)
-
-### plugin install (Vim command)
-
-```
-:NeoBundleInstall
-```
-
 # Ruby tools
 
 ### rbenv
@@ -104,9 +82,9 @@ $ rbenv global xxxx
 $ gem isntall bundler
 ```
 
-### bunle install
+### bundle install
 
 ```
-$ cd dotfiles/bunle
+$ cd dotfiles/bundle
 $ bundle install
 ```
