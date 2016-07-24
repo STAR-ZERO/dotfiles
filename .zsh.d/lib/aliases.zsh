@@ -16,3 +16,5 @@ alias tmux="TERM=screen-256color-bce tmux"
 
 alias cdb='cd-bookmark'
 alias sed='gsed'
+
+alias mvim='/Applications/MacVim.app/Contents/MacOS/mvim'
