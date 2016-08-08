@@ -39,7 +39,4 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # direnv
 eval "$(direnv hook zsh)"
 
-# XDG Base Directory Specification
-export XDG_CONFIG_HOME=~/.config
-
 typeset -U path PATH

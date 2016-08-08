@@ -1,1 +1,0 @@
-/Users/kenji/.vimrc
