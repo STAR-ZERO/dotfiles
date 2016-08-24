@@ -32,3 +32,8 @@ repo = 'thinca/vim-quickrun'
 [[plugins]]
 repo = 'vim-scripts/AnsiEsc.vim'
 
+[[plugins]]
+repo = 'vim-scripts/closetag.vim'
+on_ft = ['html', 'xml']
+hook_add = 'let g:closetag_html_style=1'
+
