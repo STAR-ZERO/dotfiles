@@ -32,6 +32,15 @@ repo = 'thinca/vim-quickrun'
 [[plugins]]
 repo = 'vim-scripts/AnsiEsc.vim'
 
+# ColorSchemeを上書きする
+# .vim/after/colorsに同名ファイルを置くと上書きされる
+[[plugins]]
+repo = 'vim-scripts/AfterColors.vim'
+
+[[plugins]]
+repo = 'othree/yajs.vim'
+on_ft = 'javascript'
+
 [[plugins]]
 repo = 'vim-scripts/closetag.vim'
 on_ft = ['html', 'xml']
