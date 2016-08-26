@@ -223,9 +223,11 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 
   " ***** Override color ****
   call <SID>X("Special", s:purple, "", "")
+  call <SID>X("Conditional", s:purple, "", "")
 
   " othree/yajs.vim
   call <SID>X("javascriptReturn", s:purple, "", "")
+  call <SID>X("javascriptFuncKeyword", s:orange, "", "")
 
 
   " Delete Functions
