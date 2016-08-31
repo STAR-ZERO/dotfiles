@@ -42,6 +42,11 @@ repo = 'othree/yajs.vim'
 on_ft = 'javascript'
 
 [[plugins]]
+repo = 'mxw/vim-jsx'
+on_ft = 'javascript'
+hook_add = 'let g:jsx_ext_required = 0'
+
+[[plugins]]
 repo = 'vim-scripts/closetag.vim'
 on_ft = ['html', 'xml']
 hook_add = 'let g:closetag_html_style=1'
