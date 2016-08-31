@@ -32,6 +32,9 @@ repo = 'thinca/vim-quickrun'
 [[plugins]]
 repo = 'vim-scripts/AnsiEsc.vim'
 
+[[plugins]]
+repo = 'tyru/caw.vim'
+
 # ColorSchemeを上書きする
 # .vim/after/colorsに同名ファイルを置くと上書きされる
 [[plugins]]
