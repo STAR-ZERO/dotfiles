@@ -1,4 +1,4 @@
-# Setup
+## Setup
 
 ```
 $ git clone git@github.com:STAR-ZERO/dotfiles.git ~/dotfiles
@@ -7,34 +7,37 @@ $ git submodule update --init
 $ ./setup.sh
 ```
 
-# Homebrew
+## Homebrew
 
-## Install Homebrew
+### Install Homebrew
 
 [Here](http://brew.sh/)
 
-## Install XQuartz
-
-[Here](http://xquartz.macosforge.org/landing/)
-
-## Install Package
+### Install Package
 
 ```
 $ cd ~/dotfiles
 $ brew/setup.sh
 ```
 
-# Install font
+## Install XQuartz
+
+[Here](http://xquartz.macosforge.org/landing/)
+
+## Insall merge tool
+
+[Meld](https://yousseb.github.io/meld/)
+
+## Install font
 
 [プログラミングフォント Myrica \| プログラミングフォント Myrica / Estable](http://myrica.estable.jp/)
 
 Download and Install `Myrica.ttc`
 
-# iTerm2 Setting
-
-## Manual Setting
+## iTerm2 Setting
 
 ### 256color
+
 Preferences… > Profiles > Terminal > Report Terminal Type  
 select `xterm-256color`
 
@@ -46,10 +49,9 @@ select `Myrica M:16pt`
 Preferences… > Profiles > Text > Non-ASCII Font > Change font  
 select `Monaco:14pt`
 
+## zsh Setting
 
-# zsh Setting
-
-##### set default shell
+### set default shell
 
 ```
 $ sudo vi /etc/shells
@@ -67,7 +69,7 @@ set login shell
 $ chpass -s /usr/local/bin/zsh
 ```
 
-# Ruby tools
+## Ruby tools
 
 ### rbenv
 
