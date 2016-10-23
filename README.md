@@ -81,7 +81,7 @@ $ rbenv global xxxx
 ### Install Bunlder
 
 ```
-$ gem isntall bundler
+$ gem install bundler
 ```
 
 ### bundle install
