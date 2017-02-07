@@ -10,12 +10,17 @@ export EDITOR='vim'
 # Java
 export JAVA_HOME=`/usr/libexec/java_home -v "1.8"`
 
-#Android
+# Android
 export ANDROID_HOME="$HOME/Library/Android/sdk"
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
-#user bin
+# Conscript
+export CONSCRIPT_HOME="$HOME/.conscript"
+export CONSCRIPT_OPTS="-XX:MaxMetaspaceSize=512M -Dfile.encoding=UTF-8"
+export PATH=$CONSCRIPT_HOME/bin:$PATH
+
+# user bin
 BIN_DIR=~/bin
 export PATH=$PATH:$BIN_DIR
 for BIN_SUB in `ls -F ${BIN_DIR}/ | grep /`
@@ -28,6 +33,11 @@ done
 if which rbenv > /dev/null; then
     export PATH=$HOME/.rbenv/bin:${HOME}/.rbenv/shims:$PATH
     eval "$(rbenv init -)"
+fi
+
+# pyenv
+if which pyenv > /dev/null; then
+    eval "$(pyenv init -)"
 fi
 
 # GVM(go version manager)
