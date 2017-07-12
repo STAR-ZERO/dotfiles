@@ -20,19 +20,13 @@ $ cd ~/dotfiles
 $ brew/setup.sh
 ```
 
-## Install XQuartz
-
-[Here](http://xquartz.macosforge.org/landing/)
-
 ## Insall merge tool
 
 [Meld](https://yousseb.github.io/meld/)
 
 ## Install font
 
-[プログラミングフォント Myrica \| プログラミングフォント Myrica / Estable](http://myrica.estable.jp/)
-
-Download and Install `Myrica.ttc`
+Use Ricty & Ricty for Powerline
 
 ## iTerm2 Setting
 
@@ -44,7 +38,7 @@ select `xterm-256color`
 ### font
 
 Preferences… > Profiles > Text > Font > Change font  
-select `Myrica M:16pt`
+select `Ricty Regular for Powerline:16pt`
 
 Preferences… > Profiles > Text > Non-ASCII Font > Change font  
 select `Monaco:14pt`
