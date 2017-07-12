@@ -29,7 +29,7 @@ rbenv
 ruby-build
 
 reattach-to-user-namespace
-https://raw.github.com/Homebrew/homebrew-dupes/master/grep.rb
+grep
 
 lua
 vim --with-lua
