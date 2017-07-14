@@ -8,7 +8,7 @@ if has('gui_macvim')
     "アンチエイリアス
     set antialias
     "フォント
-    set guifont=Myrica\ Monospace:h16
+    set guifont=Ricty-RegularForPowerline:h16
     "バックアップを取らない
     set nobackup
     "ツールバーを非表示
