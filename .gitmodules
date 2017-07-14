@@ -4,9 +4,6 @@
 [submodule ".tmux-powerline"]
 	path = .tmux-powerline
 	url = git@github.com:STAR-ZERO/tmux-powerline.git
-[submodule ".zsh.d/cd-bookmark"]
-	path = .zsh.d/cd-bookmark
-	url = git@github.com:mollifier/cd-bookmark.git
 [submodule ".zsh.d/zsh-notify"]
 	path = .zsh.d/zsh-notify
 	url = git@github.com:marzocchi/zsh-notify.git
