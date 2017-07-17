@@ -84,3 +84,17 @@ $ gem install bundler
 $ cd dotfiles/bundle
 $ bundle install
 ```
+
+## Vim
+
+### deoplete
+
+```
+:UpdateRemotePlugins
+```
+
+### vim-go
+
+```
+:GoInstallBinaries
+```

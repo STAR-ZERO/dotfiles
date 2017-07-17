@@ -12,3 +12,6 @@ done
 
 # for cdr command
 mkdir -p $HOME/.cache/shell/
+
+# for neovim
+pip3 install neovim

@@ -33,3 +33,5 @@ grep
 lua
 vim --with-lua
 neovim
+
+python3

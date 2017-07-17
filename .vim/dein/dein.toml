@@ -8,6 +8,10 @@ repo = 'Shougo/unite.vim'
 repo = 'Shougo/neocomplete.vim'
 
 [[plugins]]
+repo = 'Shougo/deoplete.nvim'
+if = "has('nvim')"
+
+[[plugins]]
 repo = 'Shougo/vimproc.vim'
 build = 'make'
 
