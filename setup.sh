@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DOTFILES_DIR=$(cd $(dirname $0) && pwd)
-DOT_FILES=(.zshrc .zprofile .zshenv .zsh.d .vimrc .gvimrc .vim .config .tmux.conf .tmux-powerline .gitconfig .gitignore_global .xvimrc .ideavimrc)
+DOT_FILES=(.zshrc .zprofile .zshenv .zsh.d .vimrc .gvimrc .vim .tmux.conf .tmux-powerline .gitconfig .gitignore_global .xvimrc .ideavimrc)
 
 for file in ${DOT_FILES[@]}
 do
@@ -13,5 +13,6 @@ done
 # for cdr command
 mkdir -p $HOME/.cache/shell/
 
-# for neovim
-pip3 install neovim
+# nvim setting file
+mkdir -p $HOME/.config/nvim/
+ln -s $DOTFILES_DIR/.vimrc $HOME/.config/nvim/init.vim

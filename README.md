@@ -89,11 +89,21 @@ $ bundle install
 
 ### deoplete
 
+on shell
+
+```
+$ pip3 install neovim
+```
+
+on vim
+
 ```
 :UpdateRemotePlugins
 ```
 
 ### vim-go
+
+on vim
 
 ```
 :GoInstallBinaries
