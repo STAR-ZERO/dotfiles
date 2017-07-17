@@ -3,11 +3,9 @@
 
 # tmux自動起動
 if [ -z $TMUX ]; then
-    if $(tmux has-session); then
-        tmux attach
-    else
-        tmux
-    fi
+    tmux
+else
+    tmux ls
 fi
 
 ## ssh 時に新規ウィンドウを作る
