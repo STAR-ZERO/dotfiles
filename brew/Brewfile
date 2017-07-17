@@ -9,7 +9,6 @@ tmux
 direnv
 z
 ctags
-ack
 hub
 pwgen
 fontforge
@@ -33,3 +32,4 @@ grep
 
 lua
 vim --with-lua
+neovim

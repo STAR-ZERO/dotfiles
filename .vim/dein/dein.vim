@@ -4,7 +4,11 @@ endif
 
 "dein.vimの自動インストール
 let s:cache_dir = empty($XDG_CACHE_HOME) ? expand('~/.cache') : $XDG_CACHE_HOME
-let s:dein_dir = s:cache_dir . '/dein'
+if has('nvim')
+  let s:dein_dir = s:cache_dir . '/nvim/dein'
+else
+  let s:dein_dir = s:cache_dir . '/vim/dein'
+endif
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 if !isdirectory(s:dein_repo_dir)
   call system('git clone https://github.com/Shougo/dein.vim ' . shellescape(s:dein_repo_dir))
