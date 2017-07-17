@@ -108,3 +108,9 @@ on vim
 ```
 :GoInstallBinaries
 ```
+
+## NeoVim
+
+```
+$ npm install -g nyaovim
+```
