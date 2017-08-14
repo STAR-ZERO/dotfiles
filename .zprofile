@@ -47,6 +47,9 @@ fi
 # Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
+# unzip
+export PATH=/usr/local/opt/unzip/bin:$PATH
+
 # direnv
 eval "$(direnv hook zsh)"
 

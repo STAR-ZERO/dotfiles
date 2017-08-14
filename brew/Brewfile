@@ -23,6 +23,7 @@ cabal-install
 redis
 node
 gnu-sed
+unzip
 
 rbenv
 ruby-build
