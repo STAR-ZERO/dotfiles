@@ -24,6 +24,7 @@ redis
 node
 gnu-sed
 unzip
+maven
 
 rbenv
 ruby-build
