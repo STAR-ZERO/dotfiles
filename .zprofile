@@ -44,6 +44,10 @@ fi
 # GVM(go version manager)
 [[ -s "${HOME}/.gvm/scripts/gvm" ]] && source "${HOME}/.gvm/scripts/gvm"
 
+# GO
+export GOPATH="$HOME/go/"
+export PATH=$GOPATH/bin:$PATH
+
 # Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
