@@ -98,3 +98,11 @@ like a below command.
 ```
 $ git submodule add https://github.com/xxxx/yyyy.git .vim/bundle/zzzz
 ```
+
+## FAQ
+
+### How to update gitsubmodules
+
+```
+$ git submodule update --remote
+```
