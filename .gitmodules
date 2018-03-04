@@ -1,9 +1,6 @@
 [submodule ".zsh.d/zsh-completions"]
 	path = .zsh.d/zsh-completions
 	url = git@github.com:zsh-users/zsh-completions.git
-[submodule ".tmux-powerline"]
-	path = .tmux-powerline
-	url = git@github.com:STAR-ZERO/tmux-powerline.git
 [submodule ".zsh.d/zsh-notify"]
 	path = .zsh.d/zsh-notify
 	url = git@github.com:marzocchi/zsh-notify.git
