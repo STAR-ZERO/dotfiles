@@ -13,3 +13,8 @@ done
 # for cdr command
 mkdir -p $HOME/.cache/shell/
 
+# powerline
+mkdir -p $HOME/.config
+if [ ! -e $HOME/.config/powerline ]; then
+    ln -s $DOTFILES_DIR/.config/powerline $HOME/.config/powerline
+fi

@@ -24,9 +24,16 @@ $ brew/setup.sh
 
 [Meld](https://yousseb.github.io/meld/)
 
-## Install font
+## Insall Powerline
 
-Use Ricty & Ricty for Powerline
+
+```
+$ pip install powerline-status
+```
+
+#### Insall Powerline font
+
+Install [this](https://github.com/powerline/fonts)
 
 ## iTerm2 Setting
 
@@ -37,11 +44,12 @@ select `xterm-256color`
 
 ### font
 
+
 Preferences… > Profiles > Text > Font > Change font  
-select `Ricty Regular for Powerline:16pt`
+select `Noto Mono for Powerline:14pt`
 
 Preferences… > Profiles > Text > Non-ASCII Font > Change font  
-select `Monaco:14pt`
+select `Noto Mono for Powerline:14pt`
 
 ## zsh Setting
 
