@@ -51,8 +51,17 @@ export PATH=$GOPATH/bin:$PATH
 # Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
+# Google Cloud
+export PATH="$HOME/google-cloud-sdk/bin:$PATH"
+export PATH="$HOME/go_appengine:$PATH"
+if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then source '/Users/kenji/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then source '/Users/kenji/google-cloud-sdk/completion.zsh.inc'; fi
+
 # unzip
 export PATH=/usr/local/opt/unzip/bin:$PATH
+
+# Flutter
+export PATH=$HOME/bin/flutter/bin:$PATH
 
 # direnv
 eval "$(direnv hook zsh)"
