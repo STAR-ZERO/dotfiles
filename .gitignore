@@ -1,8 +1,6 @@
 .DS_Store
 *.swp
 *.swo
-/.vim/bundle/*
-!.vim/bundle/.gitkeep
 
 .zsh.d/cache
 

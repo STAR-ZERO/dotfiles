@@ -1,10 +1,7 @@
-if has('nvim')
-  set runtimepath+=$HOME/.vim
-endif
+execute pathogen#infect()
 
-runtime! dein/*.vim
 runtime! config/*.vim
-runtime! config/plugins/*.vim
+runtime! config/plugin/*.vim
 
 filetype plugin indent on
 

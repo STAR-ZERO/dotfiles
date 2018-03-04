@@ -18,4 +18,3 @@ alias cdb='cd-bookmark'
 alias sed='gsed'
 
 alias mvim='/Applications/MacVim.app/Contents/bin/mvim'
-alias vim='nvim'

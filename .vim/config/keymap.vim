@@ -27,6 +27,3 @@ inoremap <C-l> <Right>
 "カーソル位置の単語をyankする
 nnoremap vy vawy
 
-if has('nvim')
-    tnoremap <Esc> <C-\><C-n>
-endif

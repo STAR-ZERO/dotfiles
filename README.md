@@ -87,30 +87,14 @@ $ bundle install
 
 ## Vim
 
-### deoplete
+Using [vim-pathogen](https://github.com/tpope/vim-pathogen) as Vim plugin manager.
 
-on shell
+#### How to add Plugin
 
-```
-$ pip3 install neovim
-```
+Use gitsubmodule.
 
-on vim
+like a below command.
 
 ```
-:UpdateRemotePlugins
-```
-
-### vim-go
-
-on vim
-
-```
-:GoInstallBinaries
-```
-
-## NeoVim
-
-```
-$ npm install -g nyaovim
+$ git submodule add https://github.com/xxxx/yyyy.git .vim/bundle/zzzz
 ```

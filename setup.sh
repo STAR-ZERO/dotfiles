@@ -13,15 +13,3 @@ done
 # for cdr command
 mkdir -p $HOME/.cache/shell/
 
-# nvim setting file
-mkdir -p $HOME/.config/nvim/
-if [ ! -e $HOME/.config/nvim/init.vim ]; then
-    ln -s $DOTFILES_DIR/.vimrc $HOME/.config/nvim/init.vim
-fi
-
-# nyaovim
-mkdir -p $HOME/.config/nyaovim/
-if [ ! -e $HOME/.config/nyaovim/nyaovimrc.html ]; then
-    ln -s $DOTFILES_DIR/.config/nyaovim/nyaovimrc.html $HOME/.config/nyaovim/nyaovimrc.html
-fi
-
