@@ -67,9 +67,15 @@ export PATH=$HOME/bin/flutter/bin:$PATH
 eval "$(direnv hook zsh)"
 
 # powerline
-powerline-daemon -q
-export POWERLINE_REPO=`pip show powerline-status 2>/dev/null | grep Location: | sed -e "s/Location: //"`
-. "${POWERLINE_REPO}/powerline/bindings/zsh/powerline.zsh"
-
+POWERLINE_DIRS=(
+    /usr/local/lib/python3.6/site-packages
+)
+for dir in $POWERLINE_DIRS; do
+  if [ -e $dir ]; then
+    export POWERLINE_REPO=$dir
+    powerline-daemon -q
+    . "${POWERLINE_REPO}/powerline/bindings/zsh/powerline.zsh"
+  fi
+done
 
 typeset -U path PATH
