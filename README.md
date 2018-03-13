@@ -26,6 +26,7 @@ $ brew/setup.sh
 
 ## Insall Powerline
 
+Use pip or pip3
 
 ```
 $ pip install powerline-status

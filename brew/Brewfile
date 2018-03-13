@@ -32,7 +32,7 @@ ruby-build
 reattach-to-user-namespace
 grep
 
+python
+
 lua
 vim --with-lua
-
-python3
