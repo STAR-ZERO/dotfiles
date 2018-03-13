@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DOTFILES_DIR=$(cd $(dirname $0) && pwd)
-DOT_FILES=(.zshrc .zprofile .zshenv .zsh.d .vimrc .gvimrc .vim .tmux.conf .tmux-powerline .gitconfig .gitignore_global .xvimrc .ideavimrc)
+DOT_FILES=(.zshrc .zprofile .zshenv .zsh.d .vimrc .gvimrc .vim .tmux.conf .gitconfig .gitignore_global .xvimrc .ideavimrc)
 
 for file in ${DOT_FILES[@]}
 do
