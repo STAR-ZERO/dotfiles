@@ -20,6 +20,15 @@ $ cd ~/dotfiles
 $ brew/setup.sh
 ```
 
+## Git - GPG
+
+Create `~/.gitconfig.local` and write below setting.
+
+```
+[user]
+	signingkey = XXXXXXXXXXXXXXXX
+```
+
 ## Insall merge tool
 
 [Meld](https://yousseb.github.io/meld/)

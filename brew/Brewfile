@@ -2,6 +2,8 @@ openssl
 readline
 libyaml
 
+gnupg
+
 sl
 git
 zsh
