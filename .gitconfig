@@ -36,5 +36,3 @@
 
 [http]
 	cookiefile = ~/.gitcookies
-[commit]
-	gpgsign = true
