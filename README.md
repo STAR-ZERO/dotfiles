@@ -60,10 +60,7 @@ select `xterm-256color`
 
 
 Preferences… > Profiles > Text > Font > Change font  
-select `Noto Mono for Powerline:14pt`
-
-Preferences… > Profiles > Text > Non-ASCII Font > Change font  
-select `Noto Mono for Powerline:14pt`
+select `Source Code Pro Powerline:14pt`
 
 ## zsh Setting
 
