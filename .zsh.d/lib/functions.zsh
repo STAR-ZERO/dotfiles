@@ -1,30 +1,6 @@
 # z.sh
 . `brew --prefix`/etc/profile.d/z.sh
 
-# tmux自動起動
-if [ -z $TMUX ]; then
-    tmux
-else
-    tmux ls
-fi
-
-## ssh 時に新規ウィンドウを作る
-#ssh_tmux() {
-#    ssh_cmd="ssh $@"
-#
-#    # 引数からホスト名を探してそれをウィンドウ名にする
-#    for i in $(seq 1 $#);do
-#        arg=$argv[$i]
-#        if [[ $arg =~ "@" ]] ; then
-#            name=${arg##*@}
-#        fi
-#    done
-#    tmux new-window -n "$name" "$ssh_cmd"
-#}
-#if [[ $TERM =~ ^"screen" ]] ; then
-#    alias ssh=ssh_tmux
-#fi
-
 # `cd`で`ls`
 # http://qiita.com/yuyuchu3333/items/b10542db482c3ac8b059
 function chpwd() {
@@ -85,14 +61,6 @@ function cdup() {
 }
 zle -N cdup
 bindkey '\^' cdup
-
-# tmuxのWindow名変更
-function precmd() {
-    if [[ ( ${-} == *i* ) && ( ${TERM} == screen* ) ]]
-    then
-        echo -n "\ek$(hostname -s)\e\\"
-    fi
-}
 
 # pecoで履歴(ctrl-r）
 function peco-select-history() {

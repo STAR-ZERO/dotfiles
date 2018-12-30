@@ -37,31 +37,6 @@ Create `~/.gitconfig.local` and write below setting.
 
 [Meld](https://yousseb.github.io/meld/)
 
-## Insall Powerline
-
-Use pip or pip3
-
-```
-$ pip install powerline-status
-```
-
-#### Insall Powerline font
-
-Install [this](https://github.com/powerline/fonts)
-
-## iTerm2 Setting
-
-### 256color
-
-Preferences… > Profiles > Terminal > Report Terminal Type  
-select `xterm-256color`
-
-### font
-
-
-Preferences… > Profiles > Text > Font > Change font  
-select `Source Code Pro Powerline:14pt`
-
 ## zsh Setting
 
 ### set default shell
