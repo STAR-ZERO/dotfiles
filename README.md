@@ -31,6 +31,8 @@ Create `~/.gitconfig.local` and write below setting.
 	signingkey = XXXXXXXXXXXXXXXX
 [commit]
 	gpgsign = true
+[gpg]
+	program = gpg2
 ```
 
 ## Insall merge tool
