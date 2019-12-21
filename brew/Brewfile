@@ -37,4 +37,4 @@ grep
 python
 
 lua
-vim --with-lua
+vim

@@ -7,6 +7,10 @@ $ git submodule update --init
 $ ./setup.sh
 ```
 
+## Install AdoptOpenJDK
+
+[Here](https://adoptopenjdk.net/)
+
 ## Homebrew
 
 ### Install Homebrew
