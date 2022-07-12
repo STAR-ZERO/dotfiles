@@ -2,24 +2,19 @@
 bindkey -e
 
 #Homebrew
-export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Editor
 export EDITOR='vim'
 
 # Java
-export JAVA_HOME=`/usr/libexec/java_home -v "1.8"`
+export JAVA_HOME=`/usr/libexec/java_home -v "11"`
 
 # Android
 export ANDROID_HOME="$HOME/Library/Android/sdk"
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
-
-# Conscript
-export CONSCRIPT_HOME="$HOME/.conscript"
-export CONSCRIPT_OPTS="-XX:MaxMetaspaceSize=512M -Dfile.encoding=UTF-8"
-export PATH=$CONSCRIPT_HOME/bin:$PATH
 
 # user bin
 BIN_DIR=~/bin
@@ -36,18 +31,6 @@ if which rbenv > /dev/null; then
     eval "$(rbenv init -)"
 fi
 
-# pyenv
-if which pyenv > /dev/null; then
-    eval "$(pyenv init -)"
-fi
-
-# GVM(go version manager)
-[[ -s "${HOME}/.gvm/scripts/gvm" ]] && source "${HOME}/.gvm/scripts/gvm"
-
-# GO
-export GOPATH="$HOME/go/"
-export PATH=$GOPATH/bin:$PATH
-
 # Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
@@ -57,9 +40,6 @@ export PATH="$HOME/go_appengine:$PATH"
 if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then source "$HOME/google-cloud-sdk/path.zsh.inc"; fi
 if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then source "$HOME/google-cloud-sdk/completion.zsh.inc"; fi
 
-# unzip
-export PATH=/usr/local/opt/unzip/bin:$PATH
-
 # Flutter
 export PATH=$HOME/bin/flutter/bin:$PATH
 
@@ -67,3 +47,4 @@ export PATH=$HOME/bin/flutter/bin:$PATH
 eval "$(direnv hook zsh)"
 
 typeset -U path PATH
+

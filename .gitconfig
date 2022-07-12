@@ -17,22 +17,8 @@
     g = log --graph --pretty=format:'%C(yellow)%h%Creset %C(magenta)%ad%Creset %C(auto)%d%Creset %s %C(cyan)<%an>%Creset' --date=format:'%Y/%m/%d %H:%M' --abbrev-commit
 [core]
     excludesfile = ~/.gitignore_global
-	ignorecase = false
-[diff]
-    tool = meld
-[difftool]
-    prompt = false
-[difftool "meld"]
-    trustExitCode = true
-    cmd = open -W -a Meld --args \"$LOCAL\" \"$PWD/$REMOTE\"
-[merge]
-    tool = meld
-[mergetool]
-    prompt = false
-	keepBackup = false
-[mergetool "meld"]
-    trustExitCode = true
-    cmd = open -W -a Meld --args --auto-merge \"$PWD/$LOCAL\" \"$PWD/$BASE\" \"$PWD/$REMOTE\" --output=\"$PWD/$MERGED\"
-
+    ignorecase = false
 [http]
-	cookiefile = ~/.gitcookies
+    cookiefile = ~/.gitcookies
+[init]
+    defaultBranch = main

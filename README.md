@@ -7,9 +7,11 @@ $ git submodule update --init
 $ ./setup.sh
 ```
 
-## Install AdoptOpenJDK
+## Install Adoptium OpenJDK
 
-[Here](https://adoptopenjdk.net/)
+[Here](https://adoptium.net/)
+
+- M1 Mac: Download `macOS aarch64` version.
 
 ## Homebrew
 
@@ -39,51 +41,19 @@ Create `~/.gitconfig.local` and write below setting.
 	program = gpg2
 ```
 
-## Insall merge tool
-
-[Meld](https://yousseb.github.io/meld/)
-
-## zsh Setting
-
-### set default shell
-
-```
-$ sudo vi /etc/shells
-```
-
-Add the following to the end
-
-```
-/usr/local/bin/zsh
-```
-
-set login shell
-
-```
-$ chpass -s /usr/local/bin/zsh
-```
-
 ## Ruby tools
 
 ### rbenv
 
 ```
+$ rbenv install --list
 $ rbenv install xxxx
 $ rbenv global xxxx
 ```
 
-### Install Bunlder
-
-```
-$ gem install bundler
-```
-
-### bundle install
-
-```
-$ cd dotfiles/bundle
-$ bundle install
-```
+Check the following if an installation error occurs
+- https://github.com/rbenv/ruby-build/issues/1998
+- `$ OPENSSL_CFLAGS=-Wno-error=implicit-function-declaration rbenv install 3.1.2`
 
 ## Vim
 
