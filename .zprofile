@@ -7,8 +7,9 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # Editor
 export EDITOR='vim'
 
-# Java
-export JAVA_HOME=`/usr/libexec/java_home -v "11"`
+# SDKMAN
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # Android
 export ANDROID_HOME="$HOME/Library/Android/sdk"

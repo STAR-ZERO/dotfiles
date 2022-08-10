@@ -7,17 +7,23 @@ $ git submodule update --init
 $ ./setup.sh
 ```
 
-## Install Adoptium OpenJDK
+## Install JDK
 
-[Here](https://adoptium.net/)
+### SDKMAN
 
-- M1 Mac: Download `macOS aarch64` version.
+[Website](https://sdkman.io/)
+
+### Install Temurin JDK
+
+```
+$ sdk install java 11.0.16-tem
+```
 
 ## Homebrew
 
 ### Install Homebrew
 
-[Here](http://brew.sh/)
+[Website](http://brew.sh/)
 
 ### Install Package
 
