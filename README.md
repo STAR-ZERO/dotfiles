@@ -32,11 +32,37 @@ $ cd ~/dotfiles
 $ brew/setup.sh
 ```
 
-## Git - GPG
+## Git
+
+### Default User (or GitHub Enterprise user)
+
+Create `~/.gitconfig.local` and write below setting.
+
+**Note**: If you use GitHub Enterprise, set user here for GitHub Enterprise.
+
+```
+[user]
+	name = xxxx
+	email = xxxx@xxxx
+```
+
+### github.com User
+
+If you use git on a private PC, no need to set up this.
+
+Create `~/.gitconfig.github` and write below setting.
+
+```
+[user]
+	name = xxxx
+	email = xxxx@xxxx
+```
+
+### GPG
 
 How to setup GPG: [GitHubのGPG Keyを設定する](https://medium.com/@star_zero/github%E3%81%AEgpg-key%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B-70e22874e533)
 
-Create `~/.gitconfig.local` and write below setting.
+Add below setting to `~/.gitconfig.local` or `~/.gitconfig.github`.
 
 ```
 [user]

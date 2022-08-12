@@ -1,8 +1,9 @@
 [include]
     path = ~/.gitconfig.local
-[user]
-    name = Kenji Abe
-    email = kenji.01.star@gmail.com
+[includeIf "hasconfig:remote.*.url:git@github.com:*/**"]
+    path = ~/.gitconfig.github
+[includeIf "hasconfig:remote.*.url:https://github.com/**"]
+    path = ~/.gitconfig.github
 [color]
     ui = true
 [push]
