@@ -27,3 +27,4 @@ nnoremap # #zz
 nnoremap g* g*zz
 nnoremap g# g#zz
 
+Plug 'tpope/vim-surround'
