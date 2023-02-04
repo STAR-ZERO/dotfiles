@@ -23,3 +23,7 @@
     cookiefile = ~/.gitcookies
 [init]
     defaultBranch = main
+[merge]
+	renameLimit = 999999
+[diff]
+	renameLimit = 999999

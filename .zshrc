@@ -9,3 +9,8 @@ for file in $ZSH/lib/*.zsh; do
 done
 unset file
 
+# Force repo to run with Python3
+function repo() {
+  command python3 ~/bin/repo $@
+}
+

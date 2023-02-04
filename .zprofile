@@ -48,5 +48,10 @@ export PATH=$HOME/bin/flutter/bin:$PATH
 # direnv
 eval "$(direnv hook zsh)"
 
+# Rust
+if [ -f "$HOME/.cargo/env" ]; then
+    source "$HOME/.cargo/env"
+fi
+
 typeset -U path PATH
 
