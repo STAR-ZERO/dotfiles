@@ -1,12 +1,6 @@
 [submodule ".zsh.d/zsh-completions"]
 	path = .zsh.d/zsh-completions
 	url = https://github.com/zsh-users/zsh-completions.git
-[submodule ".zsh.d/zsh-notify"]
-	path = .zsh.d/zsh-notify
-	url = https://github.com/marzocchi/zsh-notify.git
-[submodule ".zsh.d/cd-bookmark"]
-	path = .zsh.d/cd-bookmark
-	url = https://github.com/mollifier/cd-bookmark.git
 [submodule ".vim/bundle/nerdtree"]
 	path = .vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git

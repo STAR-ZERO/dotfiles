@@ -1,12 +1,10 @@
 direnv
-terminal-notifier
 grep
 pwgen
 wget
 tree
 peco
 gnu-sed
-z
 
 git
 tig

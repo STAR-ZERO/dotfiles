@@ -1,6 +1,3 @@
-# z.sh
-. `brew --prefix`/etc/profile.d/z.sh
-
 # `cd`で`ls`
 # http://qiita.com/yuyuchu3333/items/b10542db482c3ac8b059
 function chpwd() {
